@@ -1,0 +1,28 @@
+name: Daily Recipe Bot
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  add-recipe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install @anthropic-ai/sdk
+      - name: Generate recipe
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node generate-recipe.js
+      - run: |
+          git config --global user.name "Reel Recipes Bot"
+          git config --global user.email "bot@reelrecipes.com"
+          git add recipes.js
+          git diff --staged --quiet || git commit -m "Daily recipe $(date +%Y-%m-%d)"
+          git push 
