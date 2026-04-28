@@ -442,6 +442,52 @@ const RECIPES = [
     ]
   }
 
+,{
+  id: 10,
+  title: "Ratatouille (Confit Byaldi)",
+  film: "Ratatouille",
+  studio: "Pixar Animation Studios",
+  year: 2007,
+  category: "disney-pixar",
+  type: "animated",
+  difficulty: "medium",
+  emoji: "🫑",
+  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
+  filmConnection: "In the film's climax, Remy prepares this elegant thinly-sliced vegetable tian for the fearsome food critic Anton Ego, instantly transporting him back to his childhood and his mother's humble Provençal kitchen. The dish is actually based on confit byaldi, a refined interpretation of the rustic French classic created by chef Thomas Keller as a culinary consultant for the film. The moment beautifully captures how food carries memory and emotion, ultimately redeeming both Remy and the restaurant Gusteau's.",
+  servings: 4,
+  prepTime: "30 mins",
+  cookTime: "1 hr 30 mins",
+  totalTime: "2 hrs",
+  ingredients: [
+    "2 medium zucchini, very thinly sliced into rounds",
+    "2 medium yellow squash, very thinly sliced into rounds",
+    "4 medium Roma tomatoes, very thinly sliced into rounds",
+    "2 medium red bell peppers, very thinly sliced into rounds",
+    "1 medium eggplant, very thinly sliced into rounds",
+    "3 tbsp extra virgin olive oil, divided",
+    "4 cloves garlic, minced",
+    "1 medium yellow onion, finely diced",
+    "400g (14 oz) canned crushed tomatoes",
+    "1 tsp fresh thyme leaves",
+    "1 tsp fresh rosemary, finely chopped",
+    "1 tsp fresh oregano leaves",
+    "Salt and freshly ground black pepper to taste",
+    "1 tbsp fresh basil, chiffonade, for garnish",
+    "1 tsp balsamic vinegar"
+  ],
+  steps: [
+    { step: 1, title: "Prepare the Piperade Sauce", detail: "Heat 2 tablespoons of olive oil in an oven-safe skillet or shallow casserole dish over medium heat. Add the diced onion and cook for 8–10 minutes until softened and translucent. Add the minced garlic and cook for a further 1 minute until fragrant. Pour in the crushed tomatoes, add the thyme, rosemary, and oregano, and season generously with salt and pepper. Stir to combine and simmer on low heat for 10–15 minutes until the sauce thickens slightly. Remove from heat and stir in the balsamic vinegar. Spread the sauce evenly across the base of the dish." },
+    { step: 2, title: "Arrange the Vegetables", detail: "Preheat your oven to 275°F (135°C). Using a mandoline or a very sharp knife, slice all the vegetables — zucchini, yellow squash, Roma tomatoes, red bell pepper, and eggplant — into uniformly thin rounds, approximately 1/8 inch thick. This uniformity is essential for even cooking and the signature overlapping presentation. Beginning at the outer edge of the dish, arrange the vegetable slices in an alternating, overlapping pattern (zucchini, tomato, yellow squash, eggplant, bell pepper) standing slightly upright, working in concentric circles inward until the entire surface of the sauce is covered." },
+    { step: 3, title: "Season and Cover", detail: "Drizzle the remaining tablespoon of olive oil evenly over the arranged vegetables. Season the top lightly with flaky salt, freshly cracked black pepper, and a pinch of fresh thyme. Cut a circle of parchment paper (cartouche) to fit directly over the vegetables and press it gently down to cover them. This traps steam and ensures the vegetables cook through without drying out or burning on top." },
+    { step: 4, title: "Slow Roast", detail: "Place the dish in the preheated oven and slow roast for 1 hour to 1 hour 15 minutes, until all the vegetable slices are completely tender when pierced with the tip of a sharp knife and the edges are just beginning to caramelise. Remove the parchment for the final 10 minutes to allow the top to develop a slight golden colour. The low and slow temperature is key to the traditional Provençal style — it coaxes out the natural sweetness of each vegetable." },
+    { step: 5, title: "Rest and Serve", detail: "Remove the dish from the oven and allow it to rest for at least 10 minutes before serving. This helps the layers settle and the flavours meld. To plate in the style of the film, use a thin spatula or offset palette knife to carefully lift a neat portion of the layered vegetables and place them fanned out on a warm plate beside a spoonful of the piperade sauce from the base. Finish with a garnish of fresh basil chiffonade and a light drizzle of your best extra virgin olive oil." }
+  ],
+  bonusTip: "Any leftover ratatouille is incredible the next day — roughly chop the vegetables into the remaining piperade sauce, warm through, and toss with pappardelle pasta and a grating of Parmesan for a completely different and equally delicious meal.",
+  tags: ["french", "vegetarian", "vegan", "provençal", "slow-roast", "elegant", "pixar", "comfort-food"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
