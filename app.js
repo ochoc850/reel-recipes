@@ -127,7 +127,7 @@ function renderGrid(filter) {
     card.innerHTML = `
       ${isToday ? '<div class="today-badge">⭐ Today\'s Recipe</div>' : ''}
       <div class="card-img-wrap">
-        <img src="${recipe.image}" alt="${recipe.title}" loading="lazy"/>
+        <img src="${recipe.image}" alt="${recipe.title}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1208/c9943a?text=${encodeURIComponent(recipe.film)}';"/>
         <div class="card-type-badge ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</div>
         <div class="card-difficulty ${recipe.difficulty}">${difficultyLabel(recipe.difficulty)}</div>
       </div>
@@ -218,7 +218,7 @@ function openModal(id, scrollToComments = false) {
 
   document.getElementById('modalBody').innerHTML = `
     <div class="modal-hero">
-      <img src="${recipe.image}" alt="${recipe.title}" />
+      <img src="${recipe.image}" alt="${recipe.title}" onerror="this.onerror=null;this.src='https://placehold.co/860x280/1a1208/c9943a?text=${encodeURIComponent(recipe.film)}';"/>
       <div class="modal-hero-overlay">
         <div class="modal-badges">
           <span class="badge-type ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</span>
