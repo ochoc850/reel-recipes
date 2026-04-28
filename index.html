@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reel Recipes – Cook the Movies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">🎬</span>
+      <div>
+        <span class="logo-title">Reel Recipes</span>
+        <span class="logo-sub">Cook the Movies</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="nav-group dropdown">
+        <button class="nav-btn">🎨 Animated Films ▾</button>
+        <div class="dropdown-menu">
+          <a href="#" data-filter="studio-ghibli">Studio Ghibli</a>
+          <a href="#" data-filter="disney-pixar">Disney / Pixar</a>
+          <a href="#" data-filter="dreamworks">DreamWorks</a>
+          <a href="#" data-filter="other-animated">Other Animation</a>
+        </div>
+      </div>
+      <div class="nav-group dropdown">
+        <button class="nav-btn">🎥 Live Action Films ▾</button>
+        <div class="dropdown-menu">
+          <a href="#" data-filter="italian-classic">Italian Classics</a>
+          <a href="#" data-filter="fantasy-epic">Fantasy & Epic</a>
+          <a href="#" data-filter="drama">Drama</a>
+          <a href="#" data-filter="thriller">Thriller & Horror</a>
+        </div>
+      </div>
+      <div class="nav-group dropdown">
+        <button class="nav-btn">🍽️ Difficulty ▾</button>
+        <div class="dropdown-menu">
+          <a href="#" data-filter="easy">🟢 Easy</a>
+          <a href="#" data-filter="medium">🟡 Medium</a>
+          <a href="#" data-filter="hard">🔴 Hard</a>
+        </div>
+      </div>
+      <button class="nav-btn active" data-filter="all">All Recipes</button>
+    </nav>
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-mobile" id="closeNav">✕</button>
+  <h3>Browse Recipes</h3>
+  <p><strong>🎨 Animated</strong></p>
+  <a href="#" data-filter="studio-ghibli" class="mob-link">Studio Ghibli</a>
+  <a href="#" data-filter="disney-pixar" class="mob-link">Disney / Pixar</a>
+  <a href="#" data-filter="dreamworks" class="mob-link">DreamWorks</a>
+  <p><strong>🎥 Live Action</strong></p>
+  <a href="#" data-filter="italian-classic" class="mob-link">Italian Classics</a>
+  <a href="#" data-filter="fantasy-epic" class="mob-link">Fantasy & Epic</a>
+  <a href="#" data-filter="drama" class="mob-link">Drama</a>
+  <p><strong>🍽️ Difficulty</strong></p>
+  <a href="#" data-filter="easy" class="mob-link">🟢 Easy</a>
+  <a href="#" data-filter="medium" class="mob-link">🟡 Medium</a>
+  <a href="#" data-filter="hard" class="mob-link">🔴 Hard</a>
+  <a href="#" data-filter="all" class="mob-link">All Recipes</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-tag">Daily Film Recipes</p>
+    <h1>Every great scene<br>starts with a meal.</h1>
+    <p class="hero-desc">Real recipes, faithfully recreated from the most iconic films ever made. From Ghibli ramen to Godfather pasta — now on your table.</p>
+    <button class="hero-cta" onclick="document.getElementById('recipes').scrollIntoView({behavior:'smooth'})">Start Cooking ↓</button>
+  </div>
+  <div class="hero-film-strip">
+    <div class="strip-item">🍜 Spirited Away</div>
+    <div class="strip-item">🍝 The Godfather</div>
+    <div class="strip-item">🐀 Ratatouille</div>
+    <div class="strip-item">🥧 Hannibal</div>
+    <div class="strip-item">🫐 Paddington</div>
+    <div class="strip-item">🍳 Julie & Julia</div>
+  </div>
+</section>
+
+<!-- DAILY RECIPE BANNER -->
+<section class="daily-banner">
+  <span class="daily-label">🌟 Today's Feature Recipe</span>
+  <span class="daily-title" id="dailyTitle">Loading today's recipe...</span>
+</section>
+
+<!-- RECIPE GRID -->
+<section class="recipes-section" id="recipes">
+  <div class="section-header">
+    <h2>Recipe Collection</h2>
+    <span class="recipe-count" id="recipeCount">Loading...</span>
+  </div>
+  <div class="recipe-grid" id="recipeGrid">
+    <!-- Cards injected by JS -->
+  </div>
+</section>
+
+<!-- RECIPE MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="recipeModal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-body" id="modalBody">
+      <!-- Content injected by JS -->
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">🎬 Reel Recipes</div>
+    <p>Bringing cinema to your kitchen, one scene at a time.</p>
+    <p class="footer-small">New recipe added daily. All recipes are fan recreations for educational and personal use.</p>
+  </div>
+</footer>
+
+<script src="recipes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
