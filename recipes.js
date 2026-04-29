@@ -488,6 +488,52 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 11,
+  title: "Ratatouille (Confit Byaldi)",
+  film: "Ratatouille",
+  studio: "Pixar Animation Studios",
+  year: 2007,
+  category: "disney-pixar",
+  type: "animated",
+  difficulty: "medium",
+  emoji: "🍅",
+  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
+  filmConnection: "In the film's climactic scene, Remy prepares this elegant dish for the feared food critic Anton Ego, transporting him back to his childhood with a single bite. The dish is based on Confit Byaldi, a refined French interpretation of the rustic Provençal ratatouille, famously developed by chef Thomas Keller as a consultant for the film. This moment beautifully captures the film's central theme — that great cooking can come from anywhere, and food holds the power to unlock memory and emotion.",
+  servings: 4,
+  prepTime: "25 mins",
+  cookTime: "1 hr 30 mins",
+  totalTime: "1 hr 55 mins",
+  ingredients: [
+    "2 medium zucchini, very thinly sliced into rounds",
+    "2 medium yellow squash, very thinly sliced into rounds",
+    "4 Roma tomatoes, very thinly sliced into rounds",
+    "2 large red bell peppers, very thinly sliced into rounds",
+    "1 small eggplant, very thinly sliced into rounds",
+    "3 tbsp olive oil, divided",
+    "4 cloves garlic, minced",
+    "1 medium yellow onion, finely diced",
+    "1 can (400g) crushed tomatoes",
+    "1 tsp fresh thyme leaves",
+    "1 tsp fresh rosemary, finely chopped",
+    "1 tsp fresh oregano leaves",
+    "1 tsp balsamic vinegar",
+    "Salt and black pepper to taste",
+    "Fresh basil leaves, to garnish"
+  ],
+  steps: [
+    { step: 1, title: "Make the Piperade Sauce", detail: "Preheat your oven to 275°F (135°C). In a medium oven-safe skillet or cast iron pan, heat 2 tbsp of olive oil over medium heat. Add the diced onion and cook for 6–8 minutes until softened and translucent. Add the minced garlic and cook for another 1–2 minutes until fragrant. Pour in the crushed tomatoes and balsamic vinegar, stir to combine, and season generously with salt and black pepper. Simmer on low heat for 10 minutes until the sauce thickens slightly, then remove from heat." },
+    { step: 2, title: "Arrange the Vegetables", detail: "Using a mandoline slicer or a very sharp knife, ensure all your vegetable rounds are sliced as thinly and uniformly as possible — approximately 1/8 inch thick. Starting from the outer edge of the pan over the piperade sauce, layer the vegetable slices in an overlapping, alternating pattern (tomato, zucchini, yellow squash, eggplant, red bell pepper), working your way into the centre in a spiral. Each slice should overlap the previous by about half, creating a decorative concentric pattern." },
+    { step: 3, title: "Season and Cover", detail: "Drizzle the remaining 1 tbsp of olive oil evenly over the top of the arranged vegetables. Scatter the fresh thyme, rosemary, and oregano across the surface and season with a pinch of salt and black pepper. Cut a circle of parchment paper (cartouche) to fit just inside the diameter of the pan and press it gently down over the vegetables. This traps steam and keeps the vegetables from drying out while baking." },
+    { step: 4, title: "Slow Bake", detail: "Transfer the pan to the preheated oven and bake at 275°F (135°C) for 1 hour to 1 hour 15 minutes, until the vegetables are completely tender, slightly caramelised at the edges, and the sauce is bubbling gently around the sides. Remove the parchment for the last 15 minutes of cooking to allow the tops to take on a little colour. The low and slow bake is essential — it allows the flavours to meld together deeply in the authentic Provençal tradition." },
+    { step: 5, title: "Rest and Serve", detail: "Remove from the oven and allow to rest for 5–10 minutes before serving. Using a wide spatula, carefully lift portions of the layered vegetables onto warmed plates, taking care to keep the layers intact for presentation. Spoon a little of the piperade sauce from the bottom of the pan alongside. Garnish with fresh basil leaves and a final drizzle of good-quality olive oil. Serve as an elegant side dish or a light vegetarian main course in the true spirit of French Provençal cuisine." }
+  ],
+  bonusTip: "Any leftover piperade sauce from the base makes a wonderful pasta sauce the next day — simply toss with spaghetti and a handful of fresh basil.",
+  tags: ["french", "provençal", "vegetarian", "vegan", "baked", "classic", "pixar"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
