@@ -534,6 +534,52 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 12,
+  title: "Ratatouille (Confit Byaldi)",
+  film: "Ratatouille",
+  studio: "Pixar Animation Studios",
+  year: 2007,
+  category: "disney-pixar",
+  type: "animated",
+  difficulty: "medium",
+  emoji: "🍅",
+  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
+  filmConnection: "In the film's climactic scene, Remy prepares this elegant dish for feared food critic Anton Ego, transporting him back to his childhood with a single bite. The recipe is based on Confit Byaldi, a refined French interpretation of the humble Provençal peasant dish, reimagined for the film by chef Thomas Keller of The French Laundry. The moment became one of cinema's most beloved tributes to the transformative power of food and memory.",
+  servings: 4,
+  prepTime: "30 mins",
+  cookTime: "1 hr 30 mins",
+  totalTime: "2 hrs",
+  ingredients: [
+    "2 tbsp olive oil",
+    "1 medium yellow onion, finely diced",
+    "4 cloves garlic, minced",
+    "1 red bell pepper, finely diced",
+    "1 yellow bell pepper, finely diced",
+    "4 medium tomatoes, 2 finely diced and 2 thinly sliced into rounds",
+    "1 tsp fresh thyme leaves",
+    "1 tsp fresh oregano",
+    "Salt and black pepper to taste",
+    "1 medium zucchini, thinly sliced into rounds",
+    "1 medium yellow squash, thinly sliced into rounds",
+    "1 small eggplant, thinly sliced into rounds",
+    "3 tbsp extra virgin olive oil (for drizzling)",
+    "1 tsp fresh rosemary, finely chopped",
+    "2 tbsp fresh basil leaves, torn, for garnish"
+  ],
+  steps: [
+    { step: 1, title: "Prepare the Piperade Base", detail: "Preheat your oven to 275°F (135°C). Heat 2 tbsp olive oil in a large oven-safe skillet or shallow baking dish over medium heat. Add the diced onion and cook for 5–7 minutes until softened and translucent. Add the minced garlic and diced bell peppers, cooking for another 5 minutes. Stir in the diced tomatoes, thyme, and oregano. Season generously with salt and pepper. Simmer on low heat for 10 minutes until the mixture thickens into a jammy, fragrant base. Remove from heat and spread evenly across the bottom of the baking dish." },
+    { step: 2, title: "Layer the Vegetables", detail: "Arrange the thinly sliced rounds of zucchini, yellow squash, eggplant, and tomato in overlapping concentric circles directly on top of the piperade base, alternating each vegetable type to create a beautiful pattern. Work from the outer edge of the dish inward. The slices should be approximately 1/8 inch thick for even cooking — use a mandoline slicer if available for uniform results." },
+    { step: 3, title: "Season and Cover", detail: "Drizzle the layered vegetables generously with the extra virgin olive oil. Sprinkle the chopped rosemary evenly over the top and season with a pinch of flaky salt and freshly cracked black pepper. Cut a circle of parchment paper (cartouche) to fit just inside the dish and press it gently over the vegetables to help them steam and soften without drying out." },
+    { step: 4, title: "Slow Roast", detail: "Transfer the dish to the preheated oven and bake at 275°F (135°C) for 1 hour to 1 hour 15 minutes, until all the vegetables are completely tender, slightly caramelised at the edges, and the piperade base is bubbling gently around them. Remove the parchment for the last 15 minutes of cooking to allow the tops to develop a little colour." },
+    { step: 5, title: "Plate and Serve", detail: "Remove from the oven and allow to rest for 5 minutes. To serve in the style of the film, use a ring mould or carefully stack a few overlapping rounds of each vegetable in the centre of a warm plate with a spoonful of piperade beneath. Garnish with torn fresh basil leaves and a final drizzle of your best olive oil. Serve immediately as a main course or elegant side dish." }
+  ],
+  bonusTip: "Any leftover piperade base makes a brilliant bruschetta topping or pasta sauce the next day — simply reheat with a splash of white wine.",
+  tags: ["french", "vegetarian", "provençal", "slow-roasted", "elegant", "pixar", "comfort-food"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
