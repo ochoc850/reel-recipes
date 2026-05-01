@@ -580,6 +580,53 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 13,
+  title: "Ratatouille (Confit Byaldi)",
+  film: "Ratatouille",
+  studio: "Pixar Animation Studios",
+  year: 2007,
+  category: "disney-pixar",
+  type: "animated",
+  difficulty: "medium",
+  emoji: "🫑",
+  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
+  filmConnection: "In Pixar's beloved 2007 film, the rat chef Remy prepares this elegant dish for the fearsome food critic Anton Ego, triggering a powerful childhood memory that moves him to tears and changes his life. The dish served is actually a refined French preparation called Confit Byaldi — a modern interpretation of the rustic Provençal classic — created by real-world chef Thomas Keller as a culinary consultant on the film. The moment is widely celebrated as one of cinema's most emotionally resonant uses of food as storytelling.",
+  servings: 4,
+  prepTime: "30 mins",
+  cookTime: "1 hr 30 mins",
+  totalTime: "2 hrs",
+  ingredients: [
+    "2 medium zucchini, very thinly sliced into rounds",
+    "2 medium yellow squash, very thinly sliced into rounds",
+    "4 Roma tomatoes, very thinly sliced into rounds",
+    "2 large red bell peppers, very thinly sliced into rounds",
+    "1 medium eggplant, very thinly sliced into rounds",
+    "3 tbsp extra-virgin olive oil, divided",
+    "4 cloves garlic, minced",
+    "1 medium yellow onion, finely diced",
+    "1 can (400g) crushed tomatoes",
+    "1 tsp fresh thyme leaves",
+    "1 tsp fresh rosemary, finely chopped",
+    "1 tsp fresh flat-leaf parsley, chopped",
+    "1 bay leaf",
+    "Salt and freshly ground black pepper to taste",
+    "1 tbsp fresh basil, chiffonade, for garnish",
+    "Flaky sea salt, for finishing"
+  ],
+  steps: [
+    { step: 1, title: "Make the Pipérade Base", detail: "Preheat your oven to 135°C (275°F). Heat 2 tablespoons of olive oil in an oven-safe skillet or shallow Dutch oven over medium heat. Add the diced onion and cook, stirring occasionally, for 8–10 minutes until softened and translucent. Add the minced garlic and cook for a further 1 minute until fragrant. Stir in the crushed tomatoes, thyme, rosemary, and bay leaf. Season generously with salt and pepper. Simmer on low heat for 10 minutes until the sauce thickens slightly, then remove the bay leaf and spread the sauce into an even layer across the bottom of the pan." },
+    { step: 2, title: "Arrange the Vegetable Rounds", detail: "Using a mandoline or a very sharp knife, slice all vegetables as uniformly thin as possible — approximately 2–3mm thick. Starting at the outer edge of the pan, arrange alternating overlapping rounds of zucchini, yellow squash, tomato, red pepper, and eggplant in a circular pattern, working your way toward the centre. Each round should overlap the previous by about half, like fallen dominoes, creating a spiralling pattern. This precise layering is the visual hallmark of the dish and ensures even cooking." },
+    { step: 3, title: "Season and Cover", detail: "Drizzle the remaining tablespoon of olive oil evenly over the top of the arranged vegetables. Sprinkle lightly with salt and freshly ground black pepper. Cut a circle of parchment paper (cartouche) slightly larger than your pan, press it gently down over the vegetables to retain moisture, and then cover with a lid or aluminium foil. This slow-steam method ensures the vegetables become tender without losing their colour or structure." },
+    { step: 4, title: "Slow Roast", detail: "Transfer the covered pan to the preheated oven and bake at 135°C (275°F) for approximately 1 hour and 15 minutes, until all the vegetables are completely tender and the tomato rounds have softened into the sauce beneath. For the final 15 minutes, remove the parchment and lid and increase the oven temperature to 200°C (400°F) to lightly caramelise the tops of the vegetable rounds and reduce any excess liquid." },
+    { step: 5, title: "Rest and Plate", detail: "Remove from the oven and allow the dish to rest for 10 minutes before serving — this allows the layers to settle and the flavours to meld. To plate in restaurant style as Remy would, use a thin spatula to carefully lift a fanned portion of the vegetable rounds and arrange them in a neat arc on a warm plate over a small spoonful of the pipérade base. Finish with a few leaves of fresh basil chiffonade and a pinch of flaky sea salt. Serve immediately." }
+  ],
+  bonusTip: "Any leftover pipérade base from the bottom of the pan makes an outstanding pasta sauce or bruschetta topping the next day.",
+  tags: ["french", "vegetarian", "provençal", "slow-roasted", "elegant", "pixar", "classic"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
