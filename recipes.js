@@ -627,6 +627,48 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 14,
+  title: "Lembas Bread",
+  film: "The Lord of the Rings: The Fellowship of the Ring",
+  studio: "New Line Cinema",
+  year: 2001,
+  category: "fantasy-epic",
+  type: "live-action",
+  difficulty: "easy",
+  emoji: "🍞",
+  image: "https://placehold.co/600x400/1a1208/c9943a?text=The+Lord+of+the+Rings",
+  filmConnection: "Lembas bread is the waybread of the Elves, gifted to the Fellowship by Lady Galadriel in Lothlórien as they set out on their perilous journey. Rooted in Tolkien's deep mythological world-building, lembas draws inspiration from medieval European hardtack and Irish traveller's bread, designed to sustain a grown man on a single bite. The moment Galadriel presents it marks the Fellowship's transition from safety into the unknown, making it one of the most quietly emotional food moments in fantasy cinema.",
+  servings: 12,
+  prepTime: "15 mins",
+  cookTime: "20 mins",
+  totalTime: "35 mins",
+  ingredients: [
+    "2 cups all-purpose flour",
+    "1 tsp baking powder",
+    "1/2 tsp salt",
+    "1/4 cup honey",
+    "1/4 cup unsalted butter, cold and cubed",
+    "1/3 cup heavy cream",
+    "1 tsp vanilla extract",
+    "1/2 tsp cinnamon",
+    "1/4 tsp nutmeg",
+    "2 tbsp powdered sugar, for dusting"
+  ],
+  steps: [
+    { step: 1, title: "Preheat & Prepare", detail: "Preheat your oven to 375°F (190°C). Line a baking sheet with parchment paper and lightly flour a clean work surface. Ensure your butter is very cold, as this gives the bread its characteristic dense yet crumbly texture." },
+    { step: 2, title: "Mix the Dry Ingredients", detail: "In a large bowl, whisk together the flour, baking powder, salt, cinnamon, and nutmeg until evenly combined. The warm spices are key to evoking the elvish, almost supernatural quality of the bread." },
+    { step: 3, title: "Cut in the Butter", detail: "Add the cold cubed butter to the flour mixture. Using your fingertips or a pastry cutter, work the butter into the flour until the mixture resembles coarse crumbs with some pea-sized pieces remaining. Do not overwork the dough." },
+    { step: 4, title: "Combine Wet Ingredients", detail: "In a small bowl, whisk together the honey, heavy cream, and vanilla extract. Pour the wet mixture into the dry ingredients and stir gently with a fork until a shaggy dough just comes together. Avoid over-mixing to keep the texture tender." },
+    { step: 5, title: "Shape the Lembas", detail: "Turn the dough out onto your floured surface and gently pat it into a rectangle about 1 inch thick. Cut into 12 equal squares using a sharp knife or bench scraper. Score a light X across the top of each square with the knife tip, in the traditional elvish style." },
+    { step: 6, title: "Bake & Finish", detail: "Arrange the squares on the prepared baking sheet, spacing them slightly apart. Bake for 18–20 minutes until the edges are just golden and the tops are set but still pale. Allow to cool completely on a wire rack, then dust lightly with powdered sugar before serving." }
+  ],
+  bonusTip: "Wrap leftover lembas squares individually in large dried leaves or parchment paper tied with twine for an authentic presentation — they keep well for up to five days and make a perfect trail snack.",
+  tags: ["bread", "elvish", "tolkien", "fantasy", "travel-food", "baking", "vegetarian"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
