@@ -669,6 +669,51 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 15,
+  title: "Juicy Cheeseburger",
+  film: "Pulp Fiction",
+  studio: "Miramax Films",
+  year: 1994,
+  category: "thriller",
+  type: "live-action",
+  difficulty: "easy",
+  emoji: "🍔",
+  image: "https://placehold.co/600x400/1a0a00/d4a017?text=Pulp+Fiction",
+  filmConnection: "In one of cinema's most iconic opening scenes, hitmen Vincent Vega and Jules Winnfield debate the merits of the 'Royale with Cheese' before Jules delivers his legendary Ezekiel 25:17 monologue. The cheeseburger Vincent samples from Brett's bag became a cultural touchstone, symbolising the film's razor-sharp blend of mundane small talk and sudden menace. Tarantino's genius was making a simple fast-food burger feel as loaded with tension as any weapon on screen.",
+  servings: 4,
+  prepTime: "15 mins",
+  cookTime: "15 mins",
+  totalTime: "30 mins",
+  ingredients: [
+    "600g (1.3 lb) 80/20 ground beef chuck",
+    "1 tsp fine sea salt",
+    "1 tsp freshly cracked black pepper",
+    "1 tsp garlic powder",
+    "1 tsp Worcestershire sauce",
+    "4 slices American cheese (or sharp cheddar)",
+    "4 brioche burger buns, lightly toasted",
+    "2 tbsp unsalted butter (for toasting buns)",
+    "4 tbsp mayonnaise",
+    "2 tbsp yellow mustard",
+    "2 tbsp ketchup",
+    "4 leaves iceberg lettuce",
+    "2 medium tomatoes, sliced thick",
+    "1 small white onion, thinly sliced",
+    "8 slices dill pickle"
+  ],
+  steps: [
+    { step: 1, title: "Season and Form the Patties", detail: "Combine ground beef, salt, pepper, garlic powder, and Worcestershire sauce in a large bowl. Mix gently with your hands — do not overwork the meat or the patties will become tough. Divide into 4 equal portions of roughly 150g each and press into patties about 1cm (½ inch) thick. Use your thumb to press a shallow dimple into the centre of each patty to prevent puffing during cooking." },
+    { step: 2, title: "Toast the Buns", detail: "Melt butter in a large cast-iron skillet or griddle over medium heat. Place the buns cut-side down and toast for 1–2 minutes until golden brown. Remove and set aside. This step adds flavour and creates a barrier so the bun does not go soggy from the burger juices." },
+    { step: 3, title: "Cook the Patties", detail: "Increase the heat to medium-high and let the skillet get very hot. Cook the patties for 3–4 minutes on the first side without pressing them down — resist the urge, as pressing squeezes out all the precious juices. Flip once, and immediately place a slice of American cheese on each patty. Cook for a further 2–3 minutes for a medium doneness. Cover loosely with a lid or foil for the last 30 seconds to help the cheese melt perfectly." },
+    { step: 4, title: "Build the Burger", detail: "Spread mayonnaise generously on the top bun and a mixture of mustard and ketchup on the bottom bun. Layer the bottom bun with pickles, sliced onion, a leaf of iceberg lettuce, and a thick slice of tomato. Place the cheesy patty on top, then crown with the top bun. Serve immediately while the cheese is still molten and the bun is warm." }
+  ],
+  bonusTip: "Leftover cooked patties can be crumbled into a pan with diced onion, egg, and hot sauce the next morning for a killer breakfast scramble.",
+  tags: ["american", "burger", "classic", "comfort-food", "iconic-scene", "tarantino"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
