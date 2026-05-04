@@ -714,6 +714,50 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 16,
+  title: "Turkish Delight",
+  film: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+  studio: "Walt Disney Pictures / Walden Media",
+  year: 2005,
+  category: "fantasy-epic",
+  type: "live-action",
+  difficulty: "medium",
+  emoji: "🍬",
+  image: "https://placehold.co/600x400/1a0a2e/c9d4f5?text=The+Chronicles+of+Narnia",
+  filmConnection: "The White Witch uses enchanted Turkish Delight to seduce Edmund Pevensie into betraying his siblings, offering him as much as he could want in exchange for bringing his family to her. Turkish Delight is a centuries-old confection originating in the Ottoman Empire, and its use as a symbol of temptation and corruption is central to C.S. Lewis's 1950 novel. The scene perfectly captures how something beautiful and sweet can mask something deeply sinister.",
+  servings: 36,
+  prepTime: "20 mins",
+  cookTime: "45 mins",
+  totalTime: "1 hr 5 mins (plus 4 hrs setting time)",
+  ingredients: [
+    "3 cups granulated sugar",
+    "1 cup cold water, divided",
+    "1 cup cornstarch, divided",
+    "1 tsp cream of tartar",
+    "1¼ cups water for syrup",
+    "2 tbsp rose water",
+    "1 tsp pure vanilla extract",
+    "6 drops red or pink food colouring",
+    "½ cup chopped pistachios (optional)",
+    "1 cup powdered (icing) sugar for coating",
+    "Extra cornstarch for dusting"
+  ],
+  steps: [
+    { step: 1, title: "Prepare the Cornstarch Slurry", detail: "In a medium saucepan, whisk together ½ cup cold water and ¾ cup of the cornstarch until completely smooth with no lumps. Add the cream of tartar and stir to combine. Set aside. This slurry is the base that gives Turkish Delight its signature gelatinous, chewy texture." },
+    { step: 2, title: "Make the Sugar Syrup", detail: "In a separate heavy-bottomed saucepan, combine the granulated sugar and 1¼ cups water over medium-high heat. Stir until the sugar dissolves, then stop stirring and allow the syrup to boil. Clip a candy thermometer to the side and cook until the syrup reaches 240°F (115°C), the soft-ball stage. Remove from heat immediately." },
+    { step: 3, title: "Combine and Cook the Mixture", detail: "Place the cornstarch saucepan over medium heat and cook, stirring constantly, until the slurry thickens into a pale paste, about 3–4 minutes. Slowly and carefully pour the hot sugar syrup into the cornstarch paste in a thin, steady stream, whisking vigorously the entire time to prevent lumps. Once fully combined, reduce heat to low." },
+    { step: 4, title: "Low and Slow Simmer", detail: "Continue cooking the mixture over low heat, stirring frequently with a wooden spoon or heat-safe spatula, for approximately 35–40 minutes. The mixture is ready when it turns a pale golden colour, pulls away from the sides of the pan cleanly, and holds its shape when a small drop is placed on a cold plate. Do not rush this step — patience is key to the proper chewy texture." },
+    { step: 5, title: "Flavour and Colour", detail: "Remove the pan from heat. Stir in the rose water, vanilla extract, food colouring, and chopped pistachios if using. Mix thoroughly until the colour is evenly distributed. Rose water is the traditional and most historically authentic flavouring for this confection, dating back to the Ottoman court of the 18th century." },
+    { step: 6, title: "Set the Turkish Delight", detail: "Lightly grease a 9x9 inch (23x23 cm) baking pan and dust it generously with a mixture of powdered sugar and the remaining ¼ cup cornstarch. Pour the hot mixture evenly into the pan and smooth the top with a greased spatula. Dust the top surface with more powdered sugar and cornstarch mixture. Allow to cool at room temperature for at least 4 hours, or overnight, until fully set." },
+    { step: 7, title: "Cut and Coat", detail: "Once completely set, turn the slab out onto a clean surface dusted with the powdered sugar and cornstarch mixture. Using a lightly greased sharp knife, cut into approximately 1-inch squares. Toss each piece generously in the remaining powdered sugar and cornstarch coating to prevent sticking. Serve in a single layer — Edmund would not share, and neither should you." }
+  ],
+  bonusTip: "Store leftover Turkish Delight in an airtight container layered with parchment paper and extra powdered sugar coating; it keeps well at room temperature for up to two weeks and the flavour deepens beautifully after the first day.",
+  tags: ["british", "ottoman", "confection", "rose water", "chewy", "candy", "fantasy", "no-gelatin", "historically-accurate"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
