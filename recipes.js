@@ -758,6 +758,50 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 17,
+  title: "Juicy Cheeseburger",
+  film: "Pulp Fiction",
+  studio: "Miramax Films",
+  year: 1994,
+  category: "thriller",
+  type: "live-action",
+  difficulty: "easy",
+  emoji: "🍔",
+  image: "https://placehold.co/600x400/1a0a08/c93a3a?text=Pulp+Fiction",
+  filmConnection: "In one of cinema's most iconic opening scenes, hitmen Vincent Vega and Jules Winnfield debate the finer points of a 'Royale with Cheese' — McDonald's Quarter Pounder as it's known in France due to the metric system. The exchange is a masterclass in Tarantino's dialogue-driven tension, using something as mundane as a fast-food burger to reveal character and build dread before the violence begins. The scene cemented the humble cheeseburger as a cultural artifact of 1990s cool.",
+  servings: 4,
+  prepTime: "15 mins",
+  cookTime: "15 mins",
+  totalTime: "30 mins",
+  ingredients: [
+    "600g (1.3 lbs) ground beef (80/20 fat ratio)",
+    "4 brioche burger buns, lightly toasted",
+    "4 slices American cheese",
+    "1 tsp kosher salt",
+    "1 tsp freshly cracked black pepper",
+    "1 tsp garlic powder",
+    "2 tbsp unsalted butter",
+    "1 tbsp vegetable oil",
+    "4 tbsp yellow mustard",
+    "4 tbsp tomato ketchup",
+    "1 white onion, thinly sliced",
+    "4 leaves iceberg lettuce",
+    "2 ripe tomatoes, sliced",
+    "8 dill pickle slices"
+  ],
+  steps: [
+    { step: 1, title: "Form the Patties", detail: "Divide the ground beef into four equal 150g portions. Handle the meat as little as possible — overworking it makes tough patties. Gently shape each portion into a round patty about 1cm (½ inch) thick, pressing a shallow thumbprint into the centre of each one to prevent it from puffing up during cooking. Season generously on both sides with kosher salt, cracked black pepper, and garlic powder." },
+    { step: 2, title: "Sear the Patties", detail: "Heat a cast-iron skillet or heavy frying pan over high heat until it begins to smoke slightly. Add the vegetable oil and swirl to coat. Place the patties into the pan and press down firmly with a spatula. Cook for 3–4 minutes without moving them, allowing a deep brown crust to form. Flip once, then immediately lay a slice of American cheese on each patty. Cook for a further 2–3 minutes for medium doneness. Remove from heat and rest for 2 minutes." },
+    { step: 3, title: "Toast the Buns", detail: "While the patties rest, melt the butter in the same pan over medium heat. Place the brioche buns cut-side down into the butter and toast for 1–2 minutes until golden and fragrant. This adds richness and prevents the bun from going soggy once the sauces are applied." },
+    { step: 4, title: "Build the Burger", detail: "Spread yellow mustard on the bottom bun and ketchup on the top bun. Layer the bottom bun with iceberg lettuce, two tomato slices, and two dill pickle slices. Place the cheesy patty on top, then finish with a handful of raw sliced onion for sharpness and crunch. Cap it with the top bun, pressing down gently. Serve immediately with fries and a cold soda — or, if you're feeling continental, call it a Royale with Cheese." }
+  ],
+  bonusTip: "Leftover cooked patties can be crumbled into a pan with eggs and cheddar the next morning for a seriously good breakfast scramble.",
+  tags: ["burger", "american", "beef", "classic", "tarantino", "comfort-food", "quick"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation — cycles through recipes based on day of year
