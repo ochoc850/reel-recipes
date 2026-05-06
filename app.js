@@ -127,7 +127,8 @@ function renderGrid(filter) {
     card.innerHTML = `
       ${isToday ? '<div class="today-badge">⭐ Today\'s Recipe</div>' : ''}
       <div class="card-img-wrap">
-        <img src="${recipe.image}" alt="${recipe.title}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1208/c9943a?text=${encodeURIComponent(recipe.film)}';"/>
+        <img src="${recipe.image}" alt="${recipe.title}" loading="lazy"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/2e2238/d4c5f0?text=${encodeURIComponent(recipe.film)}';"/>
         <div class="card-type-badge ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</div>
         <div class="card-difficulty ${recipe.difficulty}">${difficultyLabel(recipe.difficulty)}</div>
       </div>
@@ -216,9 +217,23 @@ function openModal(id, scrollToComments = false) {
   const userComments = comments[recipe.id] || [];
   const allComments = [...recipe.comments, ...userComments];
 
+  // Build process images strip (3 photos showing cooking steps)
+  const processStripHTML = (recipe.processImages && recipe.processImages.length)
+    ? `<div class="process-strip">
+        ${recipe.processImages.map(p => `
+          <div class="process-strip-item">
+            <img src="${p.src}" alt="${p.caption}"
+              onerror="this.parentElement.style.display='none'" loading="lazy" />
+            <p class="ps-caption">${p.caption}</p>
+          </div>
+        `).join('')}
+      </div>`
+    : '';
+
   document.getElementById('modalBody').innerHTML = `
     <div class="modal-hero">
-      <img src="${recipe.image}" alt="${recipe.title}" onerror="this.onerror=null;this.src='https://placehold.co/860x280/1a1208/c9943a?text=${encodeURIComponent(recipe.film)}';"/>
+      <img src="${recipe.image}" alt="${recipe.title}"
+        onerror="this.onerror=null;this.src='https://placehold.co/860x280/2e2238/d4c5f0?text=${encodeURIComponent(recipe.film)}';"/>
       <div class="modal-hero-overlay">
         <div class="modal-badges">
           <span class="badge-type ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</span>
@@ -246,12 +261,14 @@ function openModal(id, scrollToComments = false) {
         </div>
       </section>
 
+      ${processStripHTML}
+
       <div class="two-col">
         <section class="ingredients-section">
           <h2>🧾 Ingredients</h2>
           <ul class="ingredient-list">
             ${recipe.ingredients.map(ing =>
-              ing.startsWith('FOR ') 
+              ing.startsWith('FOR ')
                 ? `<li class="ing-header">${ing}</li>`
                 : `<li><label><input type="checkbox" /> <span>${ing}</span></label></li>`
             ).join('')}
@@ -313,7 +330,7 @@ function openModal(id, scrollToComments = false) {
   // Like button inside modal
   document.querySelector('.modal-like-btn').addEventListener('click', (e) => {
     toggleLike(parseInt(e.target.dataset.id));
-    openModal(id, false); // re-render modal
+    openModal(id, false);
   });
 
   // Comment submission
@@ -362,7 +379,6 @@ function submitComment(recipeId) {
   comments[recipeId].push(newComment);
   localStorage.setItem('recipeComments', JSON.stringify(comments));
 
-  // Re-render modal
   openModal(recipeId, true);
 }
 
