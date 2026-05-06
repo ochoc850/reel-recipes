@@ -6,9 +6,6 @@ let activeFilter = 'all';
 let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes') || '[]');
 let comments = JSON.parse(localStorage.getItem('recipeComments') || '{}');
 
-// ─────────────────────────────────────────
-//  INIT
-// ─────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   renderGrid('all');
   setupDailyBanner();
@@ -18,42 +15,28 @@ document.addEventListener('DOMContentLoaded', () => {
   updateRecipeCount('all');
 });
 
-// ─────────────────────────────────────────
-//  DAILY BANNER
-// ─────────────────────────────────────────
 function setupDailyBanner() {
   const daily = getTodaysRecipe();
   document.getElementById('dailyTitle').textContent =
     `${daily.emoji} ${daily.title} from "${daily.film}" (${daily.year})`;
 }
 
-// ─────────────────────────────────────────
-//  NAV FILTERING
-// ─────────────────────────────────────────
 function setupNav() {
   document.querySelectorAll('[data-filter]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const filter = btn.dataset.filter;
       activeFilter = filter;
-
-      // Close dropdowns
       document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.remove('open'));
-
-      // Update active state on desktop nav
       document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
       if (btn.classList.contains('nav-btn')) btn.classList.add('active');
-
       renderGrid(filter);
       updateRecipeCount(filter);
       document.getElementById('recipes').scrollIntoView({ behavior: 'smooth' });
-
-      // Close mobile nav
       document.getElementById('mobileNav').classList.remove('open');
     });
   });
 
-  // Dropdown toggles
   document.querySelectorAll('.dropdown > .nav-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -71,23 +54,16 @@ function setupNav() {
 }
 
 function setupMobileNav() {
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
-  const closeNav = document.getElementById('closeNav');
-
-  hamburger.addEventListener('click', () => mobileNav.classList.add('open'));
-  closeNav.addEventListener('click', () => mobileNav.classList.remove('open'));
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('mobileNav').classList.add('open'));
+  document.getElementById('closeNav').addEventListener('click', () =>
+    document.getElementById('mobileNav').classList.remove('open'));
 }
 
-// ─────────────────────────────────────────
-//  FILTER LOGIC
-// ─────────────────────────────────────────
 function filterRecipes(filter) {
   if (filter === 'all') return RECIPES;
   return RECIPES.filter(r =>
-    r.category === filter ||
-    r.difficulty === filter ||
-    r.type === filter
+    r.category === filter || r.difficulty === filter || r.type === filter
   );
 }
 
@@ -96,17 +72,13 @@ function updateRecipeCount(filter) {
   document.getElementById('recipeCount').textContent = `${count} recipe${count !== 1 ? 's' : ''}`;
 }
 
-// ─────────────────────────────────────────
-//  RENDER GRID
-// ─────────────────────────────────────────
 function renderGrid(filter) {
   const grid = document.getElementById('recipeGrid');
   const filtered = filterRecipes(filter);
-
   grid.innerHTML = '';
 
   if (filtered.length === 0) {
-    grid.innerHTML = '<div class="no-results"><p>No recipes found for this filter yet.</p><p>Check back soon — new recipes added daily!</p></div>';
+    grid.innerHTML = '<div class="no-results"><p>No recipes found for this filter yet.</p><p>Check back soon!</p></div>';
     return;
   }
 
@@ -127,7 +99,7 @@ function renderGrid(filter) {
     card.innerHTML = `
       ${isToday ? '<div class="today-badge">⭐ Today\'s Recipe</div>' : ''}
       <div class="card-img-wrap">
-        <img src="${recipe.image}" alt="${recipe.title}" loading="lazy"
+        <img src="${recipe.image}" alt="${recipe.film} poster" loading="lazy"
           onerror="this.onerror=null;this.src='https://placehold.co/600x400/2e2238/d4c5f0?text=${encodeURIComponent(recipe.film)}';"/>
         <div class="card-type-badge ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</div>
         <div class="card-difficulty ${recipe.difficulty}">${difficultyLabel(recipe.difficulty)}</div>
@@ -152,11 +124,9 @@ function renderGrid(filter) {
         </div>
       </div>
     `;
-
     grid.appendChild(card);
   });
 
-  // Attach events to cards
   grid.querySelectorAll('.like-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -179,34 +149,20 @@ function renderGrid(filter) {
   });
 }
 
-// ─────────────────────────────────────────
-//  LIKE SYSTEM
-// ─────────────────────────────────────────
 function toggleLike(id) {
   const idx = likedRecipes.indexOf(id);
-  if (idx === -1) {
-    likedRecipes.push(id);
-  } else {
-    likedRecipes.splice(idx, 1);
-  }
+  if (idx === -1) likedRecipes.push(id);
+  else likedRecipes.splice(idx, 1);
   localStorage.setItem('likedRecipes', JSON.stringify(likedRecipes));
   renderGrid(activeFilter);
 }
 
-// ─────────────────────────────────────────
-//  MODAL
-// ─────────────────────────────────────────
 function setupModal() {
-  const overlay = document.getElementById('modalOverlay');
-  const closeBtn = document.getElementById('modalClose');
-
-  closeBtn.addEventListener('click', closeModal);
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) closeModal();
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('modalOverlay').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('modalOverlay')) closeModal();
   });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 }
 
 function openModal(id, scrollToComments = false) {
@@ -217,23 +173,10 @@ function openModal(id, scrollToComments = false) {
   const userComments = comments[recipe.id] || [];
   const allComments = [...recipe.comments, ...userComments];
 
-  // Build process images strip (3 photos showing cooking steps)
-  const processStripHTML = (recipe.processImages && recipe.processImages.length)
-    ? `<div class="process-strip">
-        ${recipe.processImages.map(p => `
-          <div class="process-strip-item">
-            <img src="${p.src}" alt="${p.caption}"
-              onerror="this.parentElement.style.display='none'" loading="lazy" />
-            <p class="ps-caption">${p.caption}</p>
-          </div>
-        `).join('')}
-      </div>`
-    : '';
-
   document.getElementById('modalBody').innerHTML = `
     <div class="modal-hero">
-      <img src="${recipe.image}" alt="${recipe.title}"
-        onerror="this.onerror=null;this.src='https://placehold.co/860x280/2e2238/d4c5f0?text=${encodeURIComponent(recipe.film)}';"/>
+      <img src="${recipe.foodImage}" alt="${recipe.title}"
+        onerror="this.onerror=null;this.src='https://placehold.co/860x280/2e2238/d4c5f0?text=${encodeURIComponent(recipe.title)}';"/>
       <div class="modal-hero-overlay">
         <div class="modal-badges">
           <span class="badge-type ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</span>
@@ -260,8 +203,6 @@ function openModal(id, scrollToComments = false) {
           <div class="prep-item"><span class="prep-label">Category</span><span class="prep-val">${recipe.category.replace(/-/g,' ')}</span></div>
         </div>
       </section>
-
-      ${processStripHTML}
 
       <div class="two-col">
         <section class="ingredients-section">
@@ -302,7 +243,7 @@ function openModal(id, scrollToComments = false) {
 
       <section class="comments-section" id="commentsSection">
         <h2>💬 Community</h2>
-        <div class="comments-list" id="commentsList">
+        <div class="comments-list">
           ${allComments.map(c => `
             <div class="comment">
               <div class="comment-header">
@@ -314,11 +255,10 @@ function openModal(id, scrollToComments = false) {
             </div>
           `).join('')}
         </div>
-
         <div class="comment-form">
           <h3>Leave a Comment</h3>
           <input type="text" id="commentName" placeholder="Your name (optional)" class="comment-input" />
-          <textarea id="commentText" placeholder="Share your experience, tips, or questions about this recipe..." class="comment-textarea" rows="4"></textarea>
+          <textarea id="commentText" placeholder="Share your experience, tips, or questions..." class="comment-textarea" rows="4"></textarea>
           <p class="comment-note">📸 Made this recipe? Share your creation by pasting an image URL below.</p>
           <input type="text" id="commentImage" placeholder="Image URL (optional)" class="comment-input" />
           <button class="submit-comment-btn" data-id="${recipe.id}">Post Comment</button>
@@ -327,19 +267,16 @@ function openModal(id, scrollToComments = false) {
     </div>
   `;
 
-  // Like button inside modal
   document.querySelector('.modal-like-btn').addEventListener('click', (e) => {
     toggleLike(parseInt(e.target.dataset.id));
     openModal(id, false);
   });
 
-  // Comment submission
   document.querySelector('.submit-comment-btn').addEventListener('click', (e) => {
     submitComment(parseInt(e.target.dataset.id));
   });
 
-  const overlay = document.getElementById('modalOverlay');
-  overlay.classList.add('active');
+  document.getElementById('modalOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
 
   if (scrollToComments) {
@@ -354,37 +291,19 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-// ─────────────────────────────────────────
-//  COMMENTS
-// ─────────────────────────────────────────
 function submitComment(recipeId) {
   const name = document.getElementById('commentName').value.trim() || 'Anonymous Chef';
   const text = document.getElementById('commentText').value.trim();
   const image = document.getElementById('commentImage').value.trim();
 
-  if (!text) {
-    alert('Please write something before posting!');
-    return;
-  }
+  if (!text) { alert('Please write something before posting!'); return; }
 
   if (!comments[recipeId]) comments[recipeId] = [];
-
-  const newComment = {
-    user: name,
-    text: text,
-    time: 'Just now',
-    image: image || null
-  };
-
-  comments[recipeId].push(newComment);
+  comments[recipeId].push({ user: name, text, time: 'Just now', image: image || null });
   localStorage.setItem('recipeComments', JSON.stringify(comments));
-
   openModal(recipeId, true);
 }
 
-// ─────────────────────────────────────────
-//  HELPERS
-// ─────────────────────────────────────────
 function difficultyLabel(d) {
   const map = { easy: '🟢 Easy', medium: '🟡 Medium', hard: '🔴 Hard' };
   return map[d] || d;
