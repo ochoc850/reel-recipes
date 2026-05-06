@@ -18,8 +18,15 @@ const RECIPES = [
     type: "animated",
     difficulty: "easy",
     emoji: "🍙",
-    image: "https://www.ghibli.jp/gallery/chihiro019.jpg",
-    filmConnection: "Early in the film, Chihiro's parents greedily devour mysterious food left for the spirits — a pivotal moment that transforms them into pigs. These humble rice balls are what Chihiro herself eats, gifted to her by Haku, representing the only kindness she receives as she begins her terrifying journey. In Japanese culture, onigiri carry deep emotional weight — they are comfort food, often made by a loved one's hands.",
+    // Finished dish image — real onigiri
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Onigiri_1.jpg/640px-Onigiri_1.jpg",
+    // Process images shown inside the recipe modal
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=600&q=80", caption: "Season the warm sushi rice" },
+      { src: "https://images.unsplash.com/photo-1562802378-063ec186a863?w=600&q=80", caption: "Shape with wet, salted hands" },
+      { src: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80", caption: "Wrap in crispy nori to finish" }
+    ],
+    filmConnection: "Early in the film, Chihiro's parents greedily devour mysterious food left for the spirits — a pivotal moment that transforms them into pigs. These humble rice balls are what Chihiro herself eats, gifted to her by Haku, representing the only kindness she receives as she begins her terrifying journey. Miyazaki insisted every food in the film be based on real Japanese cuisine. In Japanese culture, onigiri carry deep emotional weight — they are comfort food, often made by a loved one's hands.",
     servings: 4,
     prepTime: "10 mins",
     cookTime: "30 mins",
@@ -62,7 +69,13 @@ const RECIPES = [
     type: "animated",
     difficulty: "easy",
     emoji: "🍳",
-    image: "https://www.ghibli.jp/gallery/howl012.jpg",
+    // Finished dish image — full fry-up
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Weirdest_Full_English_Breakfast.jpg/640px-Weirdest_Full_English_Breakfast.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&q=80", caption: "Sizzle bacon in the cast-iron pan" },
+      { src: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80", caption: "Butter-baste the eggs" },
+      { src: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80", caption: "Plate everything golden and hot" }
+    ],
     filmConnection: "The breakfast scene in Howl's Moving Castle — where Howl conjures a magical fire spirit named Calcifer to fry eggs and crispy bacon — is one of the most beloved food moments in all of animation. The sizzling warmth of that cast-iron skillet over a living flame has inspired thousands of real-world cooks. This recipe recreates that golden-yolked, perfectly crisped morning ritual exactly.",
     servings: 2,
     prepTime: "5 mins",
@@ -106,8 +119,14 @@ const RECIPES = [
     type: "animated",
     difficulty: "medium",
     emoji: "🍅",
-    image: "https://lumiere-a.akamaihd.net/v1/images/ratatouille-dish_4cf5a66d.jpeg",
-    filmConnection: "When food critic Anton Ego takes his first bite of Remy's ratatouille near the film's climax, he is transported back to his mother's kitchen — a child again, all cynicism dissolved. The dish shown is actually 'confit byaldi,' an elegant Provençal preparation designed by chef Thomas Keller specifically for the film's production team. It represents the film's central message: that great food can come from unexpected places, and that anyone — even a rat — can cook.",
+    // Finished dish image — real ratatouille
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ratatouille_%28food%29.jpg/640px-Ratatouille_%28food%29.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&q=80", caption: "Slice all vegetables paper-thin" },
+      { src: "https://images.unsplash.com/photo-1545562083-5d1a0c58d83f?w=600&q=80", caption: "Layer in tight overlapping spirals" },
+      { src: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80", caption: "Slow-roast under parchment cartouche" }
+    ],
+    filmConnection: "When food critic Anton Ego takes his first bite of Remy's ratatouille near the film's climax, he is transported back to his mother's kitchen — a child again, all cynicism dissolved. The dish shown is actually 'confit byaldi,' an elegant Provençal preparation designed by chef Thomas Keller specifically for the film's production team. Pixar filmed Keller making it as a direct animation reference. It represents the film's central message: that great food can come from unexpected places, and that anyone — even a rat — can cook.",
     servings: 6,
     prepTime: "30 mins",
     cookTime: "2 hrs",
@@ -135,11 +154,11 @@ const RECIPES = [
     steps: [
       { step: 1, title: "Make the Piperade Sauce", detail: "Heat olive oil in a wide oven-safe pan over medium heat. Sauté onion until soft and translucent, about 8 minutes. Add garlic and cook 1 minute. Add diced bell peppers and cook another 8 minutes. Add crushed tomatoes, thyme, rosemary, salt and pepper. Simmer 15 minutes until thick and fragrant. Spread this sauce evenly across the bottom of a round baking dish or cast iron pan." },
       { step: 2, title: "Slice the Vegetables Paper-Thin", detail: "Use a mandoline slicer if you have one — aim for slices about 1/8 inch thick. If using a knife, work carefully and slowly. The thinner the slices, the more elegant and tender the final dish. Slice all vegetables: zucchini, yellow squash, tomatoes, and eggplant." },
-      { step: 3, title: "Arrange in Overlapping Circles", detail: "Starting at the outside edge of the pan, begin layering the vegetable slices in an overlapping pattern — like roof tiles or fish scales — alternating: eggplant, zucchini, tomato, yellow squash. Work inward in a spiral until the entire sauce surface is covered. Each slice should overlap the previous by about half." },
-      { step: 4, title: "Season and Bake", detail: "Mix together the vinaigrette ingredients and drizzle over the top of the arranged vegetables. Add a few extra thyme sprigs on top. Season with salt and pepper. Cover loosely with parchment paper pressed directly onto the vegetables (called a cartouche). Bake at 275°F (135°C) for 1 hour 45 minutes to 2 hours. The vegetables should be completely tender and slightly caramelized at the edges." },
-      { step: 5, title: "Serve with Sauce", detail: "To serve restaurant-style like in the film, use a round cookie cutter as a mold, stack several overlapping slices of the cooked vegetables upright, and spoon warm piperade sauce around them. Garnish with a tiny sprig of thyme." }
+      { step: 3, title: "Arrange in Overlapping Circles", detail: "Starting at the outside edge of the pan, begin layering the vegetable slices in an overlapping pattern — like roof tiles — alternating: eggplant, zucchini, tomato, yellow squash. Work inward in a spiral until the entire sauce surface is covered. Each slice should overlap the previous by about half." },
+      { step: 4, title: "Season and Bake", detail: "Mix together the vinaigrette ingredients and drizzle over the top. Add a few extra thyme sprigs. Season with salt and pepper. Cover loosely with parchment paper pressed directly onto the vegetables (a cartouche). Bake at 275°F (135°C) for 1 hour 45 minutes to 2 hours. The vegetables should be completely tender and slightly caramelized at the edges." },
+      { step: 5, title: "Serve with Sauce", detail: "To serve restaurant-style like in the film, use a round cookie cutter as a mold, stack several overlapping slices upright, and spoon warm piperade sauce around them. Garnish with a tiny sprig of thyme." }
     ],
-    bonusTip: "The vegetable trimmings and tomato cores from this recipe are perfect for making a summer vegetable stock. Simmer them with water, a bay leaf, and peppercorns for 30 minutes, strain, and freeze in ice cube trays for easy cooking.",
+    bonusTip: "The vegetable trimmings and tomato cores from this recipe are perfect for making a summer vegetable stock. Simmer them with water, a bay leaf, and peppercorns for 30 minutes, strain, and freeze in ice cube trays.",
     tags: ["french", "vegetarian", "elegant", "provençal"],
     likes: 512,
     comments: [
@@ -150,11 +169,178 @@ const RECIPES = [
   },
 
   // ──────────────────────────────────────────────────────────
+  //  DISNEY / PIXAR
+  // ──────────────────────────────────────────────────────────
+  {
+    id: 18,
+    title: "Tiana's New Orleans Beignets",
+    film: "The Princess and the Frog",
+    studio: "Walt Disney Animation",
+    year: 2009,
+    category: "disney-pixar",
+    type: "animated",
+    difficulty: "medium",
+    emoji: "🍩",
+    // Finished dish image — real beignets
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Beignets_from_Cafe_Du_Monde%2C_New_Orleans%2C_LA.jpg/640px-Beignets_from_Cafe_Du_Monde%2C_New_Orleans%2C_LA.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?w=600&q=80", caption: "Bloom yeast in warm water" },
+      { src: "https://images.unsplash.com/photo-1571167366136-b57e23d4a6d5?w=600&q=80", caption: "Fry until deep golden" },
+      { src: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80", caption: "Blizzard of powdered sugar" }
+    ],
+    filmConnection: "Beignets are the beating heart of Tiana's dreams throughout the film. In the opening scenes, a young Tiana serves them to Charlotte's family, and Charlotte later hires her to bake 500 of them for her masquerade ball — the down payment Tiana needs to open her own restaurant. The screen fills with bubbling oil, sugar clouds drifting through the air, and smiling neighbors, showing how Tiana's food brings her entire community together. These beignets are deeply rooted in real New Orleans tradition — Café Du Monde has served them since 1862.",
+    servings: 24,
+    prepTime: "20 mins",
+    cookTime: "20 mins",
+    totalTime: "40 mins (plus 1 hr rest)",
+    ingredients: [
+      "2¼ tsp active dry yeast",
+      "¾ cup warm water (110°F)",
+      "¼ cup granulated sugar",
+      "½ tsp salt",
+      "1 egg, beaten",
+      "½ cup evaporated milk",
+      "3½ cups all-purpose flour",
+      "2 tbsp vegetable shortening",
+      "Vegetable oil, for frying",
+      "Powdered (icing) sugar, very generous — to serve",
+      "Honey, to drizzle"
+    ],
+    steps: [
+      { step: 1, title: "Bloom the Yeast", detail: "Dissolve yeast in warm water with a pinch of the sugar. Let sit 5 minutes until foamy and fragrant — if it doesn't foam, your yeast is dead and you'll need a fresh packet." },
+      { step: 2, title: "Mix the Dough", detail: "In a large bowl, combine the yeast mixture with remaining sugar, salt, beaten egg, and evaporated milk. Work in flour gradually, then add shortening. Knead on a floured surface for 5 minutes until smooth and elastic." },
+      { step: 3, title: "Rest", detail: "Cover dough with plastic wrap and refrigerate for at least 1 hour — overnight is even better. Tiana would have prepped hers the night before." },
+      { step: 4, title: "Roll and Cut", detail: "On a floured surface, roll dough to ¼-inch thickness. Cut into 2-inch squares with a sharp knife or pizza cutter. They don't need to be perfect — beignets are rustic." },
+      { step: 5, title: "Fry", detail: "Heat 3 inches of vegetable oil to 360°F in a heavy pot. Fry beignets in small batches, 2–3 minutes per side, until deep golden all over. Don't crowd the pot or the temperature will drop. Drain on paper towels." },
+      { step: 6, title: "Finish Like Tiana", detail: "Pile on a plate and immediately bury them under a mountain of powdered sugar — do not hold back. Drizzle with warm honey. Serve hot. The sugar cloud is half the experience." }
+    ],
+    bonusTip: "The dough can be made up to 2 days ahead and kept refrigerated. Cold dough is actually easier to roll and cut. Beignets are best eaten within minutes of frying — they lose their magic quickly, just like in the film.",
+    tags: ["new-orleans", "fried", "sweet", "breakfast", "disney"],
+    likes: 421,
+    comments: [
+      { user: "TianaFan", text: "Made these for Mardi Gras and my whole family lost their minds. So good.", time: "1 day ago" },
+      { user: "NolaKitchen", text: "As a New Orleans native — this is the real deal. Tiana would approve.", time: "3 days ago" }
+    ]
+  },
+
+  {
+    id: 19,
+    title: "Tiana's Louisiana Gumbo",
+    film: "The Princess and the Frog",
+    studio: "Walt Disney Animation",
+    year: 2009,
+    category: "disney-pixar",
+    type: "animated",
+    difficulty: "medium",
+    emoji: "🍲",
+    // Finished dish image — real gumbo
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gumbo_-_stew.jpg/640px-Gumbo_-_stew.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1603046891744-1f9e7d042478?w=600&q=80", caption: "Stir the dark roux — don't stop" },
+      { src: "https://images.unsplash.com/photo-1582234377793-afbe84c74bd3?w=600&q=80", caption: "Add the Cajun holy trinity" },
+      { src: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80", caption: "Simmer with shrimp and sausage" }
+    ],
+    filmConnection: "Tiana's gumbo is the dish that grounds the entire emotional arc of the film. She learned to cook it with her father, who told her: 'You know the thing about good food? It brings folks together from all walks of life. It warms them right up and puts little smiles on their faces.' The gumbo reappears when Tiana teaches Prince Naveen to cook — a tender scene where they open up about their dreams. When she finally opens Tiana's Palace, a steaming pot of gumbo is its centerpiece. The dish blends African, Native American, Caribbean, and French influences — a perfect symbol of New Orleans itself.",
+    servings: 6,
+    prepTime: "20 mins",
+    cookTime: "75 mins",
+    totalTime: "1 hr 35 mins",
+    ingredients: [
+      "½ cup vegetable oil",
+      "½ cup all-purpose flour",
+      "1 large onion, diced",
+      "3 celery stalks, diced",
+      "1 green bell pepper, diced",
+      "4 cloves garlic, minced",
+      "12 oz andouille sausage, sliced into rounds",
+      "1 lb medium shrimp, peeled and deveined",
+      "6 cups chicken stock",
+      "2 bay leaves",
+      "1 tsp filé powder (optional, traditional thickener)",
+      "Cajun seasoning to taste",
+      "Salt and black pepper",
+      "Cooked white long-grain rice, to serve",
+      "Sliced scallions and hot sauce, to garnish"
+    ],
+    steps: [
+      { step: 1, title: "Make the Dark Roux", detail: "Heat oil in a large heavy Dutch oven over medium heat. Whisk in flour. Stir constantly with a wooden spoon for 20–25 minutes — the roux should turn the color of dark chocolate or peanut butter. Do not walk away. If it burns, start over. This roux is the foundation and soul of the gumbo." },
+      { step: 2, title: "Add the Holy Trinity", detail: "Immediately add onion, celery, and bell pepper to the hot roux. The vegetables will sizzle dramatically and stop the roux from darkening further. Stir and cook 5 minutes until softened. Add garlic and cook 1 more minute." },
+      { step: 3, title: "Build the Base", detail: "Add sliced andouille sausage and cook 3 minutes, stirring. Pour in chicken stock gradually, whisking to prevent lumps. Add bay leaves and Cajun seasoning. Bring to a boil, then reduce to a low, steady simmer." },
+      { step: 4, title: "Simmer", detail: "Simmer uncovered for 45 minutes, skimming off any fat that rises to the surface. The gumbo should reduce slightly and deepen in color. Taste and adjust seasoning — it should be boldly flavored." },
+      { step: 5, title: "Add Shrimp and Finish", detail: "Add shrimp in the last 5 minutes of cooking. They cook fast — remove from heat the moment they curl and turn pink. Stir in filé powder off the heat. Discard bay leaves." },
+      { step: 6, title: "Serve", detail: "Ladle into deep bowls over a mound of white rice. Garnish with sliced scallions and a few drops of hot sauce. Share with as many neighbors as possible." }
+    ],
+    bonusTip: "Gumbo gets better overnight as the flavors deepen. Make it a day ahead and refrigerate — reheat gently and add the shrimp fresh when serving. The roux is the hardest part: if you master the dark roux, you can cook anything.",
+    tags: ["new-orleans", "cajun", "seafood", "stew", "disney"],
+    likes: 356,
+    comments: [
+      { user: "CajunCook", text: "The roux took me 25 minutes of pure stress but the result was perfect.", time: "2 days ago" },
+      { user: "DisneyEats", text: "Made this for my family on a Sunday. Everyone wanted seconds. Tiana's dad was right.", time: "5 days ago" }
+    ]
+  },
+
+  {
+    id: 20,
+    title: "Steamed Pork Bao Buns",
+    film: "Turning Red",
+    studio: "Pixar Animation Studios",
+    year: 2022,
+    category: "disney-pixar",
+    type: "animated",
+    difficulty: "medium",
+    emoji: "🥟",
+    // Finished dish image — real bao buns
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Baozi.jpg/640px-Baozi.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80", caption: "Proof the soft dough" },
+      { src: "https://images.unsplash.com/photo-1609561122649-d8eda1c1c3e9?w=600&q=80", caption: "Fill and pleat each bun" },
+      { src: "https://images.unsplash.com/photo-1563559292a24a4de26b9a?w=600&q=80", caption: "Steam until pillowy white" }
+    ],
+    filmConnection: "Director Domee Shi drew directly from her Chinese-Canadian upbringing for Turning Red — her mother served as a cultural consultant on the film, just as she did on Domee's Oscar-winning short Bao. The steamed bao buns at Meilin's family table reflect real meals from Domee's childhood in Toronto's Chinese community. 'Bao' in Mandarin can mean 'treasure,' and in the film these pillowy dumplings represent the warmth and — at times — the smothering intensity of family love. Pixar's food has never been just food.",
+    servings: 12,
+    prepTime: "30 mins",
+    cookTime: "20 mins",
+    totalTime: "50 mins (plus 1.5 hrs proofing)",
+    ingredients: [
+      "FOR THE DOUGH:",
+      "3 cups all-purpose flour",
+      "2 tsp instant yeast",
+      "2 tbsp sugar",
+      "½ tsp baking powder",
+      "1 tbsp vegetable oil",
+      "¾ cup warm whole milk",
+      "FOR THE PORK FILLING:",
+      "½ lb ground pork",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tsp sesame oil",
+      "2 tsp fresh ginger, grated",
+      "2 scallions, finely minced",
+      "1 tsp sugar",
+      "White pepper to taste"
+    ],
+    steps: [
+      { step: 1, title: "Make the Dough", detail: "Combine flour, yeast, sugar, and baking powder in a large bowl. Add oil and warm milk. Mix then knead for 8–10 minutes until smooth and springy. Cover with plastic wrap and proof in a warm spot for 1 hour until doubled in size." },
+      { step: 2, title: "Mix the Filling", detail: "Combine all pork filling ingredients and mix thoroughly in one direction — this develops a smooth, bouncy texture. Refrigerate for 20 minutes. Cold filling is easier to handle when pleating." },
+      { step: 3, title: "Shape the Buns", detail: "Punch down dough and divide into 12 equal pieces. Roll each into a circle about 4 inches across, slightly thicker in the center than the edges. Place 1 generous tablespoon of filling in the center." },
+      { step: 4, title: "Pleat and Seal", detail: "Fold the dough up around the filling and pleat the edges together, twisting to seal — aim for at least 8 pleats. Place each bun seam-side up on a square of parchment. Cover and proof a further 20–30 minutes until puffed." },
+      { step: 5, title: "Steam", detail: "Set up a steamer over boiling water. Leave 2 inches of space between buns. Steam for 15 minutes over medium-high heat. Do not lift the lid while steaming. After 15 minutes, turn off the heat and let sit covered for 5 more minutes before opening." }
+    ],
+    bonusTip: "Leftover bao freeze beautifully — just re-steam frozen buns for 8 minutes straight from the freezer and they'll taste freshly made. A batch of 24 means you always have a good meal in reserve.",
+    tags: ["chinese", "dim-sum", "steamed", "pork", "pixar"],
+    likes: 287,
+    comments: [
+      { user: "Mei_Cooks", text: "My mom taught me to make these the same way. Seeing them in Turning Red made me cry a little.", time: "1 day ago" },
+      { user: "BaoLover", text: "The pleating took practice but even ugly ones taste incredible.", time: "4 days ago" }
+    ]
+  },
+
+  // ──────────────────────────────────────────────────────────
   //  LIVE ACTION — ITALIAN CLASSICS
   // ──────────────────────────────────────────────────────────
   {
     id: 4,
-    title: "Clemenza's Sunday Gravy (The Godfather Sauce)",
+    title: "Clemenza's Sunday Gravy",
     film: "The Godfather",
     studio: "Paramount Pictures",
     year: 1972,
@@ -162,8 +348,14 @@ const RECIPES = [
     type: "live-action",
     difficulty: "medium",
     emoji: "🍝",
-    image: "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
-    filmConnection: "Peter Clemenza's immortal instruction — 'you start out with a little bit of oil, then you fry some garlic...' — is one of cinema's most famous food monologues. He teaches Michael Corleone the recipe while also, casually, orchestrating a mob murder in the next room. The Sunday Gravy recipe in Italian-American culture is a sacred tradition, often passed down through generations. In the film, cooking this sauce represents belonging, family loyalty, and the warm domestic life that masks the violence beneath.",
+    // Finished dish image — real Italian pasta with meat sauce
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Spaghetti_al_pomodoro.jpg/640px-Spaghetti_al_pomodoro.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=600&q=80", caption: "Brown meats to build deep flavor" },
+      { src: "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?w=600&q=80", caption: "San Marzano tomatoes — no substitutes" },
+      { src: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80", caption: "Low and slow — 3 hours minimum" }
+    ],
+    filmConnection: "Peter Clemenza's immortal instruction — 'you start out with a little bit of oil, then you fry some garlic...' — is one of cinema's most famous food monologues, delivered casually while orchestrating a murder in the next room. The Sunday Gravy in Italian-American culture is a sacred tradition passed down through generations. In the film, cooking this sauce represents belonging, family loyalty, and the warm domestic life that masks the violence beneath. Francis Ford Coppola reportedly drew on his own family's recipe for the scene.",
     servings: 8,
     prepTime: "20 mins",
     cookTime: "3 hrs",
@@ -185,12 +377,12 @@ const RECIPES = [
     ],
     steps: [
       { step: 1, title: "Brown the Meats", detail: "Heat olive oil in a large heavy pot (Dutch oven) over medium-high heat. Brown the sausages on all sides, about 8 minutes. Remove. Brown the beef pieces in the same pot — don't move them for 3 minutes per side to develop a dark crust. Remove. This step builds the entire foundation of the sauce's flavor." },
-      { step: 2, title: "Fry the Garlic — Clemenza Style", detail: "Reduce heat to medium. Add a little more oil if needed. Add sliced garlic. Cook slowly until lightly golden, about 3–4 minutes. Watch it carefully — burnt garlic will ruin everything. As Clemenza says: this is the beginning." },
-      { step: 3, title: "Add Tomato Paste and Wine", detail: "Push the garlic to the side and add tomato paste. Cook the paste in the hot oil for 2 minutes, stirring — this removes its raw, metallic taste and deepens the flavor to something almost chocolatey. Add the red wine and scrape up all the browned bits stuck to the bottom. Let the wine reduce by half, about 5 minutes." },
-      { step: 4, title: "Add Tomatoes and Simmer Long and Slow", detail: "Add both cans of crushed tomatoes, oregano, chili flakes, salt, and pepper. Stir everything together. Return the browned meats to the pot, submerging them. Bring to a boil, then immediately reduce to the lowest possible simmer. Cover partially. Cook for 2½ to 3 hours, stirring every 20–30 minutes. The sauce should gently bubble — barely a bubble per second." },
+      { step: 2, title: "Fry the Garlic — Clemenza Style", detail: "Reduce heat to medium. Add sliced garlic. Cook slowly until lightly golden, about 3–4 minutes. Watch carefully — burnt garlic will ruin everything. As Clemenza says: this is the beginning." },
+      { step: 3, title: "Add Tomato Paste and Wine", detail: "Push the garlic aside and add tomato paste. Cook the paste in the hot oil for 2 minutes, stirring — this removes its raw, metallic taste and deepens the flavor. Add the red wine and scrape up all the browned bits. Let the wine reduce by half, about 5 minutes." },
+      { step: 4, title: "Add Tomatoes and Simmer Long and Slow", detail: "Add both cans of crushed tomatoes, oregano, chili flakes, salt, and pepper. Return the browned meats to the pot, submerging them. Bring to a boil, then immediately reduce to the lowest possible simmer. Cover partially. Cook for 2½ to 3 hours, stirring every 20–30 minutes." },
       { step: 5, title: "Finish and Serve", detail: "Remove the beef and shred it back into the sauce with two forks. Add fresh basil. Taste for salt. Toss with cooked pasta, top with grated Parmesan. The leftover sauce gets better every day it sits in the fridge." }
     ],
-    bonusTip: "The beef short rib bones left after shredding the meat can be simmered with water, a carrot, celery, and bay leaf for 2 more hours to make a rich beef bone broth. Strain and freeze it — use it as the base for risotto, soups, or to deglaze pans.",
+    bonusTip: "The beef short rib bones left after shredding can be simmered with water, a carrot, celery, and bay leaf for 2 more hours to make a rich bone broth. Strain and freeze — use it as the base for risotto, soups, or to deglaze pans.",
     tags: ["italian", "pasta", "slow-cook", "hearty", "family"],
     likes: 634,
     comments: [
@@ -210,8 +402,14 @@ const RECIPES = [
     type: "live-action",
     difficulty: "hard",
     emoji: "🥩",
-    image: "https://m.media-amazon.com/images/M/MV5BMjA4MzYyMjkxNF5BMl5BanBnXkFtZTcwNzM0NTIyMw@@._V1_FMjpg_UX1000_.jpg",
-    filmConnection: "Boeuf Bourguignon is the dish that both Julia Child and Julie Powell place at the absolute center of their culinary journeys. In the film, Julie declares it the 'pinnacle' — the recipe that proves she can master French cooking. For Julia Child, it was the first recipe she ever perfected in Paris in the 1950s. This deeply French, wine-soaked beef stew carries the cultural weight of an entire cuisine — it is the dish that taught America that French cooking was achievable at home.",
+    // Finished dish image — real boeuf bourguignon
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Boeuf_bourguignon_2.jpg/640px-Boeuf_bourguignon_2.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80", caption: "Pat dry — brown in small batches" },
+      { src: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=80", caption: "Deglaze with a whole bottle of Burgundy" },
+      { src: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80", caption: "Braise slow and low in the oven" }
+    ],
+    filmConnection: "Boeuf Bourguignon is the dish at the absolute center of both Julie Powell's and Julia Child's culinary journeys. In the film, Meryl Streep as Julia Child prepares it with hilarious and infectious confidence. For Julia, it was the first dish she truly perfected in Paris in the 1950s; for Julie, it was the 'pinnacle' — the recipe that proved she could master French cooking. This deeply wine-soaked braised beef carries the cultural weight of an entire cuisine and taught a generation of Americans that French cooking was achievable at home.",
     servings: 6,
     prepTime: "45 mins",
     cookTime: "3 hrs",
@@ -219,7 +417,7 @@ const RECIPES = [
     ingredients: [
       "3 lbs beef chuck, cut into 2-inch cubes",
       "6 oz thick-cut bacon, cut into lardons",
-      "1 bottle (750ml) dry red Burgundy wine (or any full-bodied red)",
+      "1 bottle (750ml) dry red Burgundy wine",
       "2 cups beef stock",
       "2 tbsp tomato paste",
       "4 garlic cloves, minced",
@@ -236,14 +434,14 @@ const RECIPES = [
       "2 tbsp butter"
     ],
     steps: [
-      { step: 1, title: "Marinate the Beef (Optional but Ideal)", detail: "The night before: combine beef cubes with wine, carrots, onion, garlic, and bouquet garni. Cover and refrigerate overnight. This is how Julia Child did it. If short on time, skip to step 2 and add the wine in step 4." },
-      { step: 2, title: "Brown the Bacon and Beef", detail: "Pat beef completely dry with paper towels (wet beef will steam, not brown). In a large Dutch oven, render bacon over medium heat until crispy. Remove. Increase heat to medium-high. In the bacon fat, brown beef cubes in batches — never crowding the pan. 3–4 minutes per side until deeply golden. This takes patience but is the most important step." },
+      { step: 1, title: "Marinate the Beef (Optional but Ideal)", detail: "The night before: combine beef cubes with wine, carrots, onion, garlic, and bouquet garni. Cover and refrigerate overnight. This is how Julia Child did it. If short on time, skip and add the wine in step 4." },
+      { step: 2, title: "Brown the Bacon and Beef", detail: "Pat beef completely dry with paper towels — wet beef will steam, not brown. In a large Dutch oven, render bacon over medium heat until crispy. Remove. Increase heat to medium-high. In the bacon fat, brown beef cubes in batches — never crowding the pan. 3–4 minutes per side until deeply golden. This takes patience but is the most important step." },
       { step: 3, title: "Build the Braise", detail: "Remove the beef. In the same pot, sauté onion and carrots until softened, about 5 minutes. Add garlic and cook 1 minute. Sprinkle flour over the vegetables and stir to coat. Cook 2 minutes. Add tomato paste and stir." },
-      { step: 4, title: "Braise Low and Slow", detail: "Return the beef and bacon to the pot. Pour in the entire bottle of wine and enough beef stock to almost cover the meat. Add bouquet garni. Bring to a gentle simmer on the stovetop, then transfer to a 325°F (160°C) oven. Braise for 2½ to 3 hours — the beef should be completely fork-tender and beginning to fall apart." },
-      { step: 5, title: "Prepare the Garnishes", detail: "While the beef braises: in a small pan, cook pearl onions in butter and sugar with ½ cup water over medium heat until the water evaporates and onions are glazed and golden, about 20 minutes. In a separate pan, sauté mushrooms in butter over high heat until golden — don't stir too much, let them brown." },
+      { step: 4, title: "Braise Low and Slow", detail: "Return the beef and bacon to the pot. Pour in the entire bottle of wine and enough beef stock to almost cover the meat. Add bouquet garni. Bring to a gentle simmer on the stovetop, then transfer to a 325°F (160°C) oven. Braise for 2½ to 3 hours — the beef should be completely fork-tender." },
+      { step: 5, title: "Prepare the Garnishes", detail: "While the beef braises: in a small pan, cook pearl onions in butter and sugar with ½ cup water over medium heat until the water evaporates and onions are glazed and golden, about 20 minutes. In a separate pan, sauté mushrooms in butter over high heat until golden." },
       { step: 6, title: "Finish the Dish", detail: "Remove the beef and strain the braising liquid into a saucepan. Boil the liquid until it reduces and coats a spoon — about 10 minutes. Taste for seasoning. Return beef to the pot, add glazed onions and mushrooms, pour the reduced sauce over everything. Serve with buttered egg noodles, crusty bread, or mashed potatoes." }
     ],
-    bonusTip: "The braising bones and any remaining braising liquid make an extraordinary sauce. Refrigerate overnight — the fat will solidify on top and can be skimmed off, leaving behind pure, clean-tasting cooking jus. Reheat it and use it on anything: roasted chicken, vegetables, or even as a soup base.",
+    bonusTip: "The braising liquid, refrigerated overnight, will have a solid fat cap you can lift off cleanly — leaving behind pure, glossy jus. Reheat it and use it on roasted chicken, vegetables, or as a soup base.",
     tags: ["french", "beef", "wine", "classic", "dinner-party"],
     likes: 298,
     comments: [
@@ -265,8 +463,14 @@ const RECIPES = [
     type: "live-action",
     difficulty: "easy",
     emoji: "🍞",
-    image: "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
-    filmConnection: "Lembas, the Elvish waybread of Lothlórien, is given to the Fellowship by Galadriel before they set out across Middle-earth. In Tolkien's lore and in the films, lembas is described as so nutritious that a single small piece can fill the stomach of a full-grown man. Samwise and Frodo survive their entire journey to Mount Doom primarily on lembas — making it perhaps the most important food in all of fantasy literature. Tolkien based it partly on ancient Celtic travel breads and religious Eucharistic traditions.",
+    // Finished dish image — shortbread-style baked squares
+    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=640&q=80",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80", caption: "Cut cold butter into flour" },
+      { src: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80", caption: "Pat dough and cut into squares" },
+      { src: "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&q=80", caption: "Golden from the oven, wrap in parchment" }
+    ],
+    filmConnection: "Lembas, the Elvish waybread of Lothlórien, is given to the Fellowship by Galadriel before they set out across Middle-earth. Samwise and Frodo survive their entire journey to Mount Doom primarily on lembas — making it perhaps the most important food in all of fantasy literature. Tolkien based it partly on ancient Celtic travel breads. Galadriel's gift of lembas marks the last moment of safety before the Fellowship fractures, making it one of the quietly emotional food moments in the trilogy.",
     servings: 12,
     prepTime: "15 mins",
     cookTime: "20 mins",
@@ -285,18 +489,70 @@ const RECIPES = [
       "1 egg yolk (for brushing)"
     ],
     steps: [
-      { step: 1, title: "Mix the Dry Ingredients", detail: "Preheat oven to 375°F (190°C). In a large bowl, whisk together flour, baking powder, salt, brown sugar, cinnamon, and nutmeg. These spices are key — lembas should smell warm and slightly exotic, as if made in an Elvish kitchen with herbs from Lórien." },
-      { step: 2, title: "Cut in the Cold Butter", detail: "Add cold cubed butter to the flour mixture. Using your fingertips (or a pastry cutter), press the butter into the flour until the mixture resembles coarse breadcrumbs with some pea-sized lumps remaining. Cold butter = flaky, crumbly texture. Do not overwork." },
-      { step: 3, title: "Add the Wet Ingredients", detail: "Whisk together cream, vanilla extract, and honey. Pour into the flour-butter mixture. Stir gently with a fork until a soft dough just comes together. Do not overmix — a few dry bits are fine." },
-      { step: 4, title: "Shape and Score", detail: "Turn out onto a lightly floured surface. Pat gently to ¾ inch thickness. Cut into 3-inch squares with a sharp knife. Score a cross pattern on each piece (this is the traditional lembas mark). Place on a parchment-lined baking sheet." },
-      { step: 5, title: "Brush and Bake", detail: "Brush each piece lightly with egg yolk for a golden color. Bake for 18–22 minutes until golden brown at the edges and just firm in the center. Cool on a rack. Wrap each piece in a folded piece of parchment for the full Elvish experience." }
+      { step: 1, title: "Mix the Dry Ingredients", detail: "Preheat oven to 375°F (190°C). In a large bowl, whisk together flour, baking powder, salt, brown sugar, cinnamon, and nutmeg. These spices are key — lembas should smell warm and slightly exotic." },
+      { step: 2, title: "Cut in the Cold Butter", detail: "Add cold cubed butter to the flour mixture. Using your fingertips, press the butter into the flour until the mixture resembles coarse breadcrumbs with some pea-sized lumps remaining. Cold butter = flaky, crumbly texture. Do not overwork." },
+      { step: 3, title: "Add the Wet Ingredients", detail: "Whisk together cream, vanilla extract, and honey. Pour into the flour-butter mixture. Stir gently with a fork until a soft dough just comes together. Do not overmix." },
+      { step: 4, title: "Shape and Score", detail: "Turn out onto a lightly floured surface. Pat gently to ¾ inch thickness. Cut into 3-inch squares with a sharp knife. Score a cross pattern on each piece. Place on a parchment-lined baking sheet." },
+      { step: 5, title: "Brush and Bake", detail: "Brush each piece lightly with egg yolk for a golden color. Bake for 18–22 minutes until golden brown at the edges and just firm in the center. Cool on a rack. Wrap each piece in parchment for the full Elvish experience." }
     ],
-    bonusTip: "Leftover lembas crumbles beautifully over vanilla ice cream or yogurt. You can also repurpose older (drier) pieces as a crunchy topping for baked fruit — just crumble over sliced apples with butter and bake for a quick crisp.",
+    bonusTip: "Leftover lembas crumbles beautifully over vanilla ice cream or yogurt. Older, drier pieces make a crunchy topping for baked fruit — just crumble over sliced apples with butter and bake.",
     tags: ["bread", "baking", "fantasy", "sweet", "snack"],
     likes: 441,
     comments: [
       { user: "TolkienKitchen", text: "Wrapped these in leaves from my garden. Perfect for a LOTR marathon.", time: "4 days ago" },
       { user: "Hobbit_Eats", text: "One small piece really does fill you up! Probably the butter though lol", time: "1 week ago" }
+    ]
+  },
+
+  {
+    id: 16,
+    title: "Turkish Delight",
+    film: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    studio: "Walt Disney Pictures / Walden Media",
+    year: 2005,
+    category: "fantasy-epic",
+    type: "live-action",
+    difficulty: "medium",
+    emoji: "🍬",
+    // Finished dish image — real Turkish delight
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Turkish_delight_-_rosewater.jpg/640px-Turkish_delight_-_rosewater.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&q=80", caption: "Cook sugar syrup to soft-ball stage" },
+      { src: "https://images.unsplash.com/photo-1626082896492-78543ceb8e79?w=600&q=80", caption: "Stir in rosewater and colour" },
+      { src: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80", caption: "Set overnight, cut and coat in sugar" }
+    ],
+    filmConnection: "The White Witch uses enchanted Turkish Delight to seduce Edmund Pevensie into betraying his siblings, offering him as much as he could ever want. Turkish Delight is a centuries-old confection from the Ottoman Empire, and its use as a symbol of temptation and corruption is central to C.S. Lewis's 1950 novel. The scene is one of cinema's most perfect metaphors for how something beautiful and sweet can mask something deeply sinister.",
+    servings: 36,
+    prepTime: "20 mins",
+    cookTime: "45 mins",
+    totalTime: "1 hr 5 mins (plus 4 hrs setting)",
+    ingredients: [
+      "3 cups granulated sugar",
+      "1 cup cold water, divided",
+      "1 cup cornstarch, divided",
+      "1 tsp cream of tartar",
+      "1¼ cups water for syrup",
+      "2 tbsp rose water",
+      "1 tsp vanilla extract",
+      "6 drops pink food colouring",
+      "½ cup chopped pistachios (optional)",
+      "1 cup powdered (icing) sugar for coating",
+      "Extra cornstarch for dusting"
+    ],
+    steps: [
+      { step: 1, title: "Prepare the Cornstarch Slurry", detail: "In a medium saucepan, whisk together ½ cup cold water and ¾ cup of the cornstarch until completely smooth with no lumps. Add the cream of tartar and stir to combine. Set aside." },
+      { step: 2, title: "Make the Sugar Syrup", detail: "In a separate heavy-bottomed saucepan, combine sugar and 1¼ cups water over medium-high heat. Stir until the sugar dissolves, then stop stirring and cook until the syrup reaches 240°F (115°C) — soft-ball stage. Remove from heat immediately." },
+      { step: 3, title: "Combine and Cook", detail: "Place the cornstarch saucepan over medium heat and cook, stirring constantly, until the slurry thickens to a pale paste, about 3–4 minutes. Slowly pour the hot sugar syrup into the paste in a thin stream, whisking the entire time. Reduce heat to low." },
+      { step: 4, title: "Low and Slow Simmer", detail: "Continue cooking over low heat, stirring frequently, for approximately 35–40 minutes until the mixture turns pale golden, pulls away from the sides of the pan cleanly, and holds its shape on a cold plate. Do not rush this step." },
+      { step: 5, title: "Flavour and Colour", detail: "Remove from heat. Stir in rose water, vanilla extract, food colouring, and chopped pistachios if using. Mix thoroughly until the colour is evenly distributed." },
+      { step: 6, title: "Set, Cut and Coat", detail: "Grease and dust a 9×9 inch pan with powdered sugar and cornstarch. Pour in the mixture, smooth the top, dust with more sugar-cornstarch. Cool at room temperature at least 4 hours. Turn out, cut into 1-inch squares with a greased knife. Toss each piece in the powdered sugar coating." }
+    ],
+    bonusTip: "Store in an airtight container layered with parchment and extra coating sugar. Keeps at room temperature for two weeks and the flavour deepens beautifully after the first day.",
+    tags: ["british", "ottoman", "confection", "rose water", "candy", "fantasy"],
+    likes: 198,
+    comments: [
+      { user: "NarniaKitchen", text: "Worth every step. The rose water version is so much better than shop-bought.", time: "3 days ago" },
+      { user: "EdmundApproves", text: "I now understand why Edmund betrayed his whole family.", time: "1 week ago" }
     ]
   },
 
@@ -313,15 +569,21 @@ const RECIPES = [
     type: "live-action",
     difficulty: "medium",
     emoji: "🫘",
-    image: "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
-    filmConnection: "Hannibal Lecter's chilling description — 'I ate his liver with some fava beans and a nice Chianti' — is one of the most iconic lines in cinema history. The recipe, while delivered with monstrous implication, actually describes a perfectly classical Italian preparation. Liver with fava beans is an ancient Roman dish, and Chianti is the natural pairing from Tuscany. This version uses chicken or beef liver — a beautifully rich, iron-forward ingredient that many home cooks overlook. We are making the dish, not the context.",
+    // Finished dish image — pan-fried liver and beans
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Fried_liver_with_onions.jpg/640px-Fried_liver_with_onions.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600&q=80", caption: "Soak liver in milk to remove bitterness" },
+      { src: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80", caption: "Caramelize onions low and slow" },
+      { src: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80", caption: "Sear hot — keep the center pink" }
+    ],
+    filmConnection: "Hannibal Lecter's chilling description — 'I ate his liver with some fava beans and a nice Chianti' — is one of the most iconic lines in cinema history. Delivered with terrifying calm, the line works because it actually describes a perfectly classical Italian preparation. Liver with fava beans is an ancient Roman dish, and Chianti is the natural Tuscan pairing. The recipe is deeply traditional — we are making the dish, not the context.",
     servings: 2,
     prepTime: "20 mins",
     cookTime: "20 mins",
     totalTime: "40 mins",
     ingredients: [
       "12 oz chicken or beef liver, cleaned and sliced",
-      "1 cup fresh or frozen fava beans (or broad beans)",
+      "1 cup fresh or frozen fava beans",
       "4 garlic cloves, minced",
       "1 medium onion, thinly sliced",
       "2 tbsp butter",
@@ -334,13 +596,13 @@ const RECIPES = [
       "Crusty bread to serve"
     ],
     steps: [
-      { step: 1, title: "Prepare the Liver", detail: "Pat liver slices completely dry with paper towels. Season generously with salt and pepper. If using beef liver, soak in milk for 30 minutes beforehand and rinse — this draws out bitterness and dramatically improves the flavor. This step is what separates good liver from great liver." },
-      { step: 2, title: "Cook the Fava Beans", detail: "If using fresh favas: blanch shelled beans in boiling water 2 minutes, then transfer to ice water. Pop each bean out of its pale skin — this reveals the vibrant green interior. For frozen beans, just thaw and skip the peeling. Season with salt." },
+      { step: 1, title: "Prepare the Liver", detail: "Pat liver slices completely dry with paper towels. Season generously with salt and pepper. If using beef liver, soak in milk for 30 minutes beforehand and rinse — this draws out bitterness and dramatically improves the flavor." },
+      { step: 2, title: "Cook the Fava Beans", detail: "If using fresh favas: blanch shelled beans in boiling water 2 minutes, then transfer to ice water. Pop each bean out of its pale skin — this reveals the vibrant green interior. For frozen beans, just thaw and skip the peeling." },
       { step: 3, title: "Caramelize the Onions and Garlic", detail: "Heat butter and olive oil in a wide skillet over medium heat. Add onion and cook slowly for 10–12 minutes until deeply golden and sweet. Add garlic and sage leaves, cook 2 more minutes. Remove everything from the pan and set aside." },
-      { step: 4, title: "Sear the Liver", detail: "Increase heat to medium-high. Add a little more butter. When the butter foams, add liver slices in a single layer. Cook 2 minutes per side — the inside should still be slightly pink. Overcooked liver becomes grainy and dry; the center should be blushing pink." },
-      { step: 5, title: "Deglaze and Finish", detail: "Return the onion mixture to the pan. Pour in the Chianti. Let it sizzle and reduce for 2 minutes, scraping up any browned bits. Add fava beans and rosemary. Squeeze lemon juice over everything. Taste for salt. Serve immediately over crusty bread or with polenta." }
+      { step: 4, title: "Sear the Liver", detail: "Increase heat to medium-high. Add a little more butter. When the butter foams, add liver slices in a single layer. Cook 2 minutes per side — the inside should still be slightly pink. Overcooked liver becomes grainy and dry." },
+      { step: 5, title: "Deglaze and Finish", detail: "Return the onion mixture to the pan. Pour in the Chianti. Let it sizzle and reduce for 2 minutes, scraping up any browned bits. Add fava beans and rosemary. Squeeze lemon juice over everything. Serve immediately over crusty bread or polenta." }
     ],
-    bonusTip: "The fava bean pods themselves can be eaten when very young and tender — sauté them whole in olive oil and garlic. The cooking juices from this dish, reduced slightly, make a phenomenal sauce for pasta or crostini.",
+    bonusTip: "The cooking juices from this dish, reduced slightly, make a phenomenal sauce for pasta or crostini. The fava bean pods themselves can be eaten when very young — sauté them whole in olive oil and garlic.",
     tags: ["offal", "italian", "classic", "film-iconic", "wine"],
     likes: 203,
     comments: [
@@ -349,52 +611,58 @@ const RECIPES = [
     ]
   },
 
-  // ──────────────────────────────────────────────────────────
-  //  DREAMWORKS
-  // ──────────────────────────────────────────────────────────
   {
-    id: 8,
-    title: "Shrek's Swamp Weed Soup",
-    film: "Shrek",
-    studio: "DreamWorks Animation",
-    year: 2001,
-    category: "dreamworks",
-    type: "animated",
+    id: 15,
+    title: "The Royale with Cheese (Juicy Cheeseburger)",
+    film: "Pulp Fiction",
+    studio: "Miramax Films",
+    year: 1994,
+    category: "thriller",
+    type: "live-action",
     difficulty: "easy",
-    emoji: "🧅",
-    image: "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
-    filmConnection: "Shrek's swamp home is filled with onions — they appear in his earwax candles, his garden, and his larder. His famous speech to Donkey uses an onion as a metaphor for ogres having layers. When Shrek cooks for himself in his swamp, the cuisine would be rustic, earthy, and deeply satisfying. This recipe is a rich French onion-style soup inspired by what a self-sufficient, surprisingly skilled ogre chef might prepare on a cold swamp evening.",
+    emoji: "🍔",
+    // Finished dish image — real cheeseburger
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/240px-PNG_transparency_demonstration_1.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Grilled_Cheese_On_Burger.jpg/640px-Grilled_Cheese_On_Burger.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80", caption: "Form loose patties — don't overwork" },
+      { src: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80", caption: "Sear in screaming hot cast iron" },
+      { src: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80", caption: "Melt the cheese, stack the build" }
+    ],
+    filmConnection: "Vincent Vega and Jules Winnfield's debate about the 'Royale with Cheese' — a Quarter Pounder as it's known in America, renamed due to the metric system in France — is one of Tarantino's most celebrated pieces of dialogue. Tarantino's genius was using something as mundane as a fast-food burger to reveal character, establish tone, and build dread before the violence begins. The scene cemented the humble cheeseburger as a cultural artifact of 1990s cool.",
     servings: 4,
-    prepTime: "10 mins",
-    cookTime: "50 mins",
-    totalTime: "60 mins",
+    prepTime: "15 mins",
+    cookTime: "15 mins",
+    totalTime: "30 mins",
     ingredients: [
-      "5 large yellow onions, thinly sliced",
-      "4 tbsp butter",
-      "1 tbsp olive oil",
-      "3 garlic cloves, minced",
-      "1 tsp fresh thyme",
-      "1 tsp sugar",
-      "½ cup dry white wine or dry sherry",
-      "4 cups vegetable or beef broth",
-      "1 bay leaf",
-      "Salt and pepper",
-      "FOR TOPPING:",
-      "4 thick slices crusty bread",
-      "1½ cups Gruyère or Swiss cheese, grated"
+      "600g (1.3 lb) 80/20 ground beef chuck",
+      "1 tsp fine sea salt",
+      "1 tsp freshly cracked black pepper",
+      "1 tsp garlic powder",
+      "1 tsp Worcestershire sauce",
+      "4 slices American cheese",
+      "4 brioche burger buns, lightly toasted",
+      "2 tbsp unsalted butter (for toasting buns)",
+      "4 tbsp mayonnaise",
+      "2 tbsp yellow mustard",
+      "2 tbsp ketchup",
+      "4 leaves iceberg lettuce",
+      "2 medium tomatoes, sliced thick",
+      "1 small white onion, thinly sliced",
+      "8 slices dill pickle"
     ],
     steps: [
-      { step: 1, title: "The Long Caramelization (This is Where the Magic Is)", detail: "Melt butter and oil in a large heavy pot over medium heat. Add all the sliced onions and the sugar. Stir to coat. Cook, stirring every 5 minutes, for 35–40 minutes. They will reduce dramatically. Be patient — this is the heart of the soup. You want them deeply golden-brown and jammy, not just soft and pale." },
-      { step: 2, title: "Add the Aromatics", detail: "Add garlic, thyme, and bay leaf. Cook 2 minutes. Pour in the wine — it will sizzle dramatically. Scrape up all the browned bits from the bottom. Let the wine reduce mostly away, about 3 minutes." },
-      { step: 3, title: "Simmer the Soup", detail: "Add broth, bring to a simmer. Season with salt and pepper. Cook 15 more minutes. Taste — it should be deep, sweet, savory, and slightly tangy." },
-      { step: 4, title: "Broil with Cheese", detail: "Ladle soup into oven-safe bowls. Float a slice of crusty bread on top of each. Cover generously with grated cheese. Place under the broiler for 3–4 minutes until the cheese is bubbling, golden, and has little charred spots. Serve immediately." }
+      { step: 1, title: "Form the Patties", detail: "Combine beef, salt, pepper, garlic powder, and Worcestershire sauce. Mix gently — do not overwork the meat. Divide into 4 equal portions and press into patties about ½ inch thick. Press a shallow thumbprint into the center of each to prevent puffing." },
+      { step: 2, title: "Toast the Buns", detail: "Melt butter in a large cast-iron skillet over medium heat. Place the buns cut-side down and toast for 1–2 minutes until golden. Remove and set aside." },
+      { step: 3, title: "Sear the Patties", detail: "Increase heat to medium-high and let the skillet get very hot. Cook the patties for 3–4 minutes on the first side without pressing down. Flip once, immediately place a slice of cheese on each. Cook 2–3 more minutes for medium. Cover loosely for the last 30 seconds to melt the cheese." },
+      { step: 4, title: "Build the Burger", detail: "Spread mayo on the top bun and mustard-ketchup on the bottom. Layer with pickles, onion, lettuce, and tomato. Add the cheesy patty. Crown with the top bun. Serve immediately. Optionally call it a Royale with Cheese." }
     ],
-    bonusTip: "This onion base, before adding broth, can be refrigerated for up to a week and used as a sauce for burgers, a pizza topping, a pasta sauce, or stirred into scrambled eggs. It's essentially a magic ingredient.",
-    tags: ["soup", "vegetarian", "onion", "french-style", "comfort"],
-    likes: 317,
+    bonusTip: "Leftover cooked patties crumble beautifully into a pan with eggs and cheddar the next morning for a serious breakfast scramble.",
+    tags: ["burger", "american", "beef", "classic", "tarantino", "comfort-food", "quick"],
+    likes: 312,
     comments: [
-      { user: "OgreKitchen", text: "Made this and felt POWERFUL. Shrek understood flavour.", time: "3 days ago" },
-      { user: "DonkeyApproved", text: "I used to think I hated onions. This soup changed my entire worldview.", time: "1 week ago" }
+      { user: "TarantinoKitchen", text: "Made these for movie night. The dialogue hits different when you're actually eating a burger.", time: "2 days ago" },
+      { user: "RoyaleWithCheese", text: "The cast iron sear is non-negotiable. Don't use a non-stick.", time: "4 days ago" }
     ]
   },
 
@@ -404,15 +672,21 @@ const RECIPES = [
   {
     id: 9,
     title: "Paddington's Perfect Marmalade Sandwich",
-    film: "Paddington (2014)",
+    film: "Paddington",
     studio: "StudioCanal",
     year: 2014,
     category: "other-animated",
     type: "animated",
     difficulty: "easy",
     emoji: "🫐",
-    image: "https://m.media-amazon.com/images/M/MV5BMjM2NTMxMzUxMl5BMl5BanBnXkFtZTgwOTcyNjU0MjE@._V1_FMjpg_UX1000_.jpg",
-    filmConnection: "Paddington Bear carries marmalade sandwiches in his hat for emergencies — a practice taught to him by his Aunt Lucy in the jungles of Peru, inspired by the marmalade brought to their remote village by a visiting English explorer. The marmalade sandwich in the films is Paddington's connection to his home, his identity, and his optimistic approach to a frightening new world. This recipe includes homemade orange marmalade — the real thing — because Paddington deserves no less.",
+    // Finished dish image — real orange marmalade
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Seville_orange_marmalade.jpg/640px-Seville_orange_marmalade.jpg",
+    processImages: [
+      { src: "https://images.unsplash.com/photo-1562819862-3b7ae2b30d74?w=600&q=80", caption: "Simmer Seville orange peel until soft" },
+      { src: "https://images.unsplash.com/photo-1583448695823-a81f9fe44bf2?w=600&q=80", caption: "Wrinkle test on a frozen plate" },
+      { src: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=600&q=80", caption: "Spread generously — no moderation allowed" }
+    ],
+    filmConnection: "Paddington Bear carries marmalade sandwiches in his hat for emergencies — a practice taught to him by his Aunt Lucy in darkest Peru, inspired by the marmalade brought to their remote village by a visiting English explorer. In the 2014 film, when Paddington first unpacks his emergency sandwich after his journey, it is a perfect, quietly moving moment of comfort from home in a frightening new world. This recipe makes the real thing — because Paddington deserves no less.",
     servings: 4,
     prepTime: "20 mins",
     cookTime: "45 mins",
@@ -429,11 +703,11 @@ const RECIPES = [
       "The marmalade above"
     ],
     steps: [
-      { step: 1, title: "Make the Marmalade", detail: "Wash oranges and lemon well. Peel in wide strips and cut the peel into thin strips (julienne). Remove white pith from the fruit and roughly chop the flesh, catching all juice. Place peel strips, chopped fruit, juice, and water in a pan. Bring to boil, reduce heat, simmer 30 minutes until peel is very soft." },
-      { step: 2, title: "Add Sugar and Set", detail: "Add sugar, stir until dissolved. Bring to a rolling boil and cook without stirring for 10–15 minutes. Test if it has set: place a teaspoon of jam on a cold plate from the freezer. Push it with your finger — if it wrinkles, it's ready. If not, boil 5 more minutes and test again. Pour into clean glass jars. It will firm up as it cools." },
-      { step: 3, title: "Assemble the Sandwich", detail: "Spread softened butter generously on all 4 slices of bread — both sides of each slice. Spread a thick, unapologetic layer of cooled marmalade on two slices. Press together gently. Cut diagonally. For the authentic Paddington experience: wrap one in foil and store under your hat." }
+      { step: 1, title: "Make the Marmalade", detail: "Wash oranges and lemon well. Peel in wide strips and cut the peel into thin strips. Remove white pith from the fruit and roughly chop the flesh, catching all juice. Place peel strips, chopped fruit, juice, and water in a pan. Bring to boil, reduce heat, simmer 30 minutes until peel is very soft." },
+      { step: 2, title: "Add Sugar and Set", detail: "Add sugar, stir until dissolved. Bring to a rolling boil and cook without stirring for 10–15 minutes. Test on a cold plate from the freezer — push with your finger and if it wrinkles, it's ready. Pour into clean glass jars. It will firm up as it cools." },
+      { step: 3, title: "Assemble the Sandwich", detail: "Spread softened butter generously on both slices of bread. Spread a thick, unapologetic layer of cooled marmalade on one slice. Press together. Cut diagonally. For the authentic Paddington experience: wrap one in foil and store under your hat." }
     ],
-    bonusTip: "Orange marmalade is extraordinary in other applications: stir it into a pan sauce for roasted duck or chicken, spread it on warm scones with clotted cream, or mix it into a salad dressing with Dijon mustard.",
+    bonusTip: "Orange marmalade is extraordinary in other applications: stir it into a pan sauce for roasted duck or chicken, spread it on warm scones with clotted cream, or mix into a salad dressing with Dijon mustard.",
     tags: ["british", "jam", "sandwich", "baking", "easy"],
     likes: 276,
     comments: [
@@ -441,366 +715,6 @@ const RECIPES = [
       { user: "PeruToPaddington", text: "I put the sandwich in my hat to see what it was like. 10/10 experience.", time: "4 days ago" }
     ]
   }
-
-,{
-  id: 10,
-  title: "Ratatouille (Confit Byaldi)",
-  film: "Ratatouille",
-  studio: "Pixar Animation Studios",
-  year: 2007,
-  category: "disney-pixar",
-  type: "animated",
-  difficulty: "medium",
-  emoji: "🫑",
-  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
-  filmConnection: "In the film's climax, Remy prepares this elegant thinly-sliced vegetable tian for the fearsome food critic Anton Ego, instantly transporting him back to his childhood and his mother's humble Provençal kitchen. The dish is actually based on confit byaldi, a refined interpretation of the rustic French classic created by chef Thomas Keller as a culinary consultant for the film. The moment beautifully captures how food carries memory and emotion, ultimately redeeming both Remy and the restaurant Gusteau's.",
-  servings: 4,
-  prepTime: "30 mins",
-  cookTime: "1 hr 30 mins",
-  totalTime: "2 hrs",
-  ingredients: [
-    "2 medium zucchini, very thinly sliced into rounds",
-    "2 medium yellow squash, very thinly sliced into rounds",
-    "4 medium Roma tomatoes, very thinly sliced into rounds",
-    "2 medium red bell peppers, very thinly sliced into rounds",
-    "1 medium eggplant, very thinly sliced into rounds",
-    "3 tbsp extra virgin olive oil, divided",
-    "4 cloves garlic, minced",
-    "1 medium yellow onion, finely diced",
-    "400g (14 oz) canned crushed tomatoes",
-    "1 tsp fresh thyme leaves",
-    "1 tsp fresh rosemary, finely chopped",
-    "1 tsp fresh oregano leaves",
-    "Salt and freshly ground black pepper to taste",
-    "1 tbsp fresh basil, chiffonade, for garnish",
-    "1 tsp balsamic vinegar"
-  ],
-  steps: [
-    { step: 1, title: "Prepare the Piperade Sauce", detail: "Heat 2 tablespoons of olive oil in an oven-safe skillet or shallow casserole dish over medium heat. Add the diced onion and cook for 8–10 minutes until softened and translucent. Add the minced garlic and cook for a further 1 minute until fragrant. Pour in the crushed tomatoes, add the thyme, rosemary, and oregano, and season generously with salt and pepper. Stir to combine and simmer on low heat for 10–15 minutes until the sauce thickens slightly. Remove from heat and stir in the balsamic vinegar. Spread the sauce evenly across the base of the dish." },
-    { step: 2, title: "Arrange the Vegetables", detail: "Preheat your oven to 275°F (135°C). Using a mandoline or a very sharp knife, slice all the vegetables — zucchini, yellow squash, Roma tomatoes, red bell pepper, and eggplant — into uniformly thin rounds, approximately 1/8 inch thick. This uniformity is essential for even cooking and the signature overlapping presentation. Beginning at the outer edge of the dish, arrange the vegetable slices in an alternating, overlapping pattern (zucchini, tomato, yellow squash, eggplant, bell pepper) standing slightly upright, working in concentric circles inward until the entire surface of the sauce is covered." },
-    { step: 3, title: "Season and Cover", detail: "Drizzle the remaining tablespoon of olive oil evenly over the arranged vegetables. Season the top lightly with flaky salt, freshly cracked black pepper, and a pinch of fresh thyme. Cut a circle of parchment paper (cartouche) to fit directly over the vegetables and press it gently down to cover them. This traps steam and ensures the vegetables cook through without drying out or burning on top." },
-    { step: 4, title: "Slow Roast", detail: "Place the dish in the preheated oven and slow roast for 1 hour to 1 hour 15 minutes, until all the vegetable slices are completely tender when pierced with the tip of a sharp knife and the edges are just beginning to caramelise. Remove the parchment for the final 10 minutes to allow the top to develop a slight golden colour. The low and slow temperature is key to the traditional Provençal style — it coaxes out the natural sweetness of each vegetable." },
-    { step: 5, title: "Rest and Serve", detail: "Remove the dish from the oven and allow it to rest for at least 10 minutes before serving. This helps the layers settle and the flavours meld. To plate in the style of the film, use a thin spatula or offset palette knife to carefully lift a neat portion of the layered vegetables and place them fanned out on a warm plate beside a spoonful of the piperade sauce from the base. Finish with a garnish of fresh basil chiffonade and a light drizzle of your best extra virgin olive oil." }
-  ],
-  bonusTip: "Any leftover ratatouille is incredible the next day — roughly chop the vegetables into the remaining piperade sauce, warm through, and toss with pappardelle pasta and a grating of Parmesan for a completely different and equally delicious meal.",
-  tags: ["french", "vegetarian", "vegan", "provençal", "slow-roast", "elegant", "pixar", "comfort-food"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 11,
-  title: "Ratatouille (Confit Byaldi)",
-  film: "Ratatouille",
-  studio: "Pixar Animation Studios",
-  year: 2007,
-  category: "disney-pixar",
-  type: "animated",
-  difficulty: "medium",
-  emoji: "🍅",
-  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
-  filmConnection: "In the film's climactic scene, Remy prepares this elegant dish for the feared food critic Anton Ego, transporting him back to his childhood with a single bite. The dish is based on Confit Byaldi, a refined French interpretation of the rustic Provençal ratatouille, famously developed by chef Thomas Keller as a consultant for the film. This moment beautifully captures the film's central theme — that great cooking can come from anywhere, and food holds the power to unlock memory and emotion.",
-  servings: 4,
-  prepTime: "25 mins",
-  cookTime: "1 hr 30 mins",
-  totalTime: "1 hr 55 mins",
-  ingredients: [
-    "2 medium zucchini, very thinly sliced into rounds",
-    "2 medium yellow squash, very thinly sliced into rounds",
-    "4 Roma tomatoes, very thinly sliced into rounds",
-    "2 large red bell peppers, very thinly sliced into rounds",
-    "1 small eggplant, very thinly sliced into rounds",
-    "3 tbsp olive oil, divided",
-    "4 cloves garlic, minced",
-    "1 medium yellow onion, finely diced",
-    "1 can (400g) crushed tomatoes",
-    "1 tsp fresh thyme leaves",
-    "1 tsp fresh rosemary, finely chopped",
-    "1 tsp fresh oregano leaves",
-    "1 tsp balsamic vinegar",
-    "Salt and black pepper to taste",
-    "Fresh basil leaves, to garnish"
-  ],
-  steps: [
-    { step: 1, title: "Make the Piperade Sauce", detail: "Preheat your oven to 275°F (135°C). In a medium oven-safe skillet or cast iron pan, heat 2 tbsp of olive oil over medium heat. Add the diced onion and cook for 6–8 minutes until softened and translucent. Add the minced garlic and cook for another 1–2 minutes until fragrant. Pour in the crushed tomatoes and balsamic vinegar, stir to combine, and season generously with salt and black pepper. Simmer on low heat for 10 minutes until the sauce thickens slightly, then remove from heat." },
-    { step: 2, title: "Arrange the Vegetables", detail: "Using a mandoline slicer or a very sharp knife, ensure all your vegetable rounds are sliced as thinly and uniformly as possible — approximately 1/8 inch thick. Starting from the outer edge of the pan over the piperade sauce, layer the vegetable slices in an overlapping, alternating pattern (tomato, zucchini, yellow squash, eggplant, red bell pepper), working your way into the centre in a spiral. Each slice should overlap the previous by about half, creating a decorative concentric pattern." },
-    { step: 3, title: "Season and Cover", detail: "Drizzle the remaining 1 tbsp of olive oil evenly over the top of the arranged vegetables. Scatter the fresh thyme, rosemary, and oregano across the surface and season with a pinch of salt and black pepper. Cut a circle of parchment paper (cartouche) to fit just inside the diameter of the pan and press it gently down over the vegetables. This traps steam and keeps the vegetables from drying out while baking." },
-    { step: 4, title: "Slow Bake", detail: "Transfer the pan to the preheated oven and bake at 275°F (135°C) for 1 hour to 1 hour 15 minutes, until the vegetables are completely tender, slightly caramelised at the edges, and the sauce is bubbling gently around the sides. Remove the parchment for the last 15 minutes of cooking to allow the tops to take on a little colour. The low and slow bake is essential — it allows the flavours to meld together deeply in the authentic Provençal tradition." },
-    { step: 5, title: "Rest and Serve", detail: "Remove from the oven and allow to rest for 5–10 minutes before serving. Using a wide spatula, carefully lift portions of the layered vegetables onto warmed plates, taking care to keep the layers intact for presentation. Spoon a little of the piperade sauce from the bottom of the pan alongside. Garnish with fresh basil leaves and a final drizzle of good-quality olive oil. Serve as an elegant side dish or a light vegetarian main course in the true spirit of French Provençal cuisine." }
-  ],
-  bonusTip: "Any leftover piperade sauce from the base makes a wonderful pasta sauce the next day — simply toss with spaghetti and a handful of fresh basil.",
-  tags: ["french", "provençal", "vegetarian", "vegan", "baked", "classic", "pixar"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 12,
-  title: "Ratatouille (Confit Byaldi)",
-  film: "Ratatouille",
-  studio: "Pixar Animation Studios",
-  year: 2007,
-  category: "disney-pixar",
-  type: "animated",
-  difficulty: "medium",
-  emoji: "🍅",
-  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
-  filmConnection: "In the film's climactic scene, Remy prepares this elegant dish for feared food critic Anton Ego, transporting him back to his childhood with a single bite. The recipe is based on Confit Byaldi, a refined French interpretation of the humble Provençal peasant dish, reimagined for the film by chef Thomas Keller of The French Laundry. The moment became one of cinema's most beloved tributes to the transformative power of food and memory.",
-  servings: 4,
-  prepTime: "30 mins",
-  cookTime: "1 hr 30 mins",
-  totalTime: "2 hrs",
-  ingredients: [
-    "2 tbsp olive oil",
-    "1 medium yellow onion, finely diced",
-    "4 cloves garlic, minced",
-    "1 red bell pepper, finely diced",
-    "1 yellow bell pepper, finely diced",
-    "4 medium tomatoes, 2 finely diced and 2 thinly sliced into rounds",
-    "1 tsp fresh thyme leaves",
-    "1 tsp fresh oregano",
-    "Salt and black pepper to taste",
-    "1 medium zucchini, thinly sliced into rounds",
-    "1 medium yellow squash, thinly sliced into rounds",
-    "1 small eggplant, thinly sliced into rounds",
-    "3 tbsp extra virgin olive oil (for drizzling)",
-    "1 tsp fresh rosemary, finely chopped",
-    "2 tbsp fresh basil leaves, torn, for garnish"
-  ],
-  steps: [
-    { step: 1, title: "Prepare the Piperade Base", detail: "Preheat your oven to 275°F (135°C). Heat 2 tbsp olive oil in a large oven-safe skillet or shallow baking dish over medium heat. Add the diced onion and cook for 5–7 minutes until softened and translucent. Add the minced garlic and diced bell peppers, cooking for another 5 minutes. Stir in the diced tomatoes, thyme, and oregano. Season generously with salt and pepper. Simmer on low heat for 10 minutes until the mixture thickens into a jammy, fragrant base. Remove from heat and spread evenly across the bottom of the baking dish." },
-    { step: 2, title: "Layer the Vegetables", detail: "Arrange the thinly sliced rounds of zucchini, yellow squash, eggplant, and tomato in overlapping concentric circles directly on top of the piperade base, alternating each vegetable type to create a beautiful pattern. Work from the outer edge of the dish inward. The slices should be approximately 1/8 inch thick for even cooking — use a mandoline slicer if available for uniform results." },
-    { step: 3, title: "Season and Cover", detail: "Drizzle the layered vegetables generously with the extra virgin olive oil. Sprinkle the chopped rosemary evenly over the top and season with a pinch of flaky salt and freshly cracked black pepper. Cut a circle of parchment paper (cartouche) to fit just inside the dish and press it gently over the vegetables to help them steam and soften without drying out." },
-    { step: 4, title: "Slow Roast", detail: "Transfer the dish to the preheated oven and bake at 275°F (135°C) for 1 hour to 1 hour 15 minutes, until all the vegetables are completely tender, slightly caramelised at the edges, and the piperade base is bubbling gently around them. Remove the parchment for the last 15 minutes of cooking to allow the tops to develop a little colour." },
-    { step: 5, title: "Plate and Serve", detail: "Remove from the oven and allow to rest for 5 minutes. To serve in the style of the film, use a ring mould or carefully stack a few overlapping rounds of each vegetable in the centre of a warm plate with a spoonful of piperade beneath. Garnish with torn fresh basil leaves and a final drizzle of your best olive oil. Serve immediately as a main course or elegant side dish." }
-  ],
-  bonusTip: "Any leftover piperade base makes a brilliant bruschetta topping or pasta sauce the next day — simply reheat with a splash of white wine.",
-  tags: ["french", "vegetarian", "provençal", "slow-roasted", "elegant", "pixar", "comfort-food"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 13,
-  title: "Ratatouille (Confit Byaldi)",
-  film: "Ratatouille",
-  studio: "Pixar Animation Studios",
-  year: 2007,
-  category: "disney-pixar",
-  type: "animated",
-  difficulty: "medium",
-  emoji: "🫑",
-  image: "https://placehold.co/600x400/1a1208/c9943a?text=Ratatouille",
-  filmConnection: "In Pixar's beloved 2007 film, the rat chef Remy prepares this elegant dish for the fearsome food critic Anton Ego, triggering a powerful childhood memory that moves him to tears and changes his life. The dish served is actually a refined French preparation called Confit Byaldi — a modern interpretation of the rustic Provençal classic — created by real-world chef Thomas Keller as a culinary consultant on the film. The moment is widely celebrated as one of cinema's most emotionally resonant uses of food as storytelling.",
-  servings: 4,
-  prepTime: "30 mins",
-  cookTime: "1 hr 30 mins",
-  totalTime: "2 hrs",
-  ingredients: [
-    "2 medium zucchini, very thinly sliced into rounds",
-    "2 medium yellow squash, very thinly sliced into rounds",
-    "4 Roma tomatoes, very thinly sliced into rounds",
-    "2 large red bell peppers, very thinly sliced into rounds",
-    "1 medium eggplant, very thinly sliced into rounds",
-    "3 tbsp extra-virgin olive oil, divided",
-    "4 cloves garlic, minced",
-    "1 medium yellow onion, finely diced",
-    "1 can (400g) crushed tomatoes",
-    "1 tsp fresh thyme leaves",
-    "1 tsp fresh rosemary, finely chopped",
-    "1 tsp fresh flat-leaf parsley, chopped",
-    "1 bay leaf",
-    "Salt and freshly ground black pepper to taste",
-    "1 tbsp fresh basil, chiffonade, for garnish",
-    "Flaky sea salt, for finishing"
-  ],
-  steps: [
-    { step: 1, title: "Make the Pipérade Base", detail: "Preheat your oven to 135°C (275°F). Heat 2 tablespoons of olive oil in an oven-safe skillet or shallow Dutch oven over medium heat. Add the diced onion and cook, stirring occasionally, for 8–10 minutes until softened and translucent. Add the minced garlic and cook for a further 1 minute until fragrant. Stir in the crushed tomatoes, thyme, rosemary, and bay leaf. Season generously with salt and pepper. Simmer on low heat for 10 minutes until the sauce thickens slightly, then remove the bay leaf and spread the sauce into an even layer across the bottom of the pan." },
-    { step: 2, title: "Arrange the Vegetable Rounds", detail: "Using a mandoline or a very sharp knife, slice all vegetables as uniformly thin as possible — approximately 2–3mm thick. Starting at the outer edge of the pan, arrange alternating overlapping rounds of zucchini, yellow squash, tomato, red pepper, and eggplant in a circular pattern, working your way toward the centre. Each round should overlap the previous by about half, like fallen dominoes, creating a spiralling pattern. This precise layering is the visual hallmark of the dish and ensures even cooking." },
-    { step: 3, title: "Season and Cover", detail: "Drizzle the remaining tablespoon of olive oil evenly over the top of the arranged vegetables. Sprinkle lightly with salt and freshly ground black pepper. Cut a circle of parchment paper (cartouche) slightly larger than your pan, press it gently down over the vegetables to retain moisture, and then cover with a lid or aluminium foil. This slow-steam method ensures the vegetables become tender without losing their colour or structure." },
-    { step: 4, title: "Slow Roast", detail: "Transfer the covered pan to the preheated oven and bake at 135°C (275°F) for approximately 1 hour and 15 minutes, until all the vegetables are completely tender and the tomato rounds have softened into the sauce beneath. For the final 15 minutes, remove the parchment and lid and increase the oven temperature to 200°C (400°F) to lightly caramelise the tops of the vegetable rounds and reduce any excess liquid." },
-    { step: 5, title: "Rest and Plate", detail: "Remove from the oven and allow the dish to rest for 10 minutes before serving — this allows the layers to settle and the flavours to meld. To plate in restaurant style as Remy would, use a thin spatula to carefully lift a fanned portion of the vegetable rounds and arrange them in a neat arc on a warm plate over a small spoonful of the pipérade base. Finish with a few leaves of fresh basil chiffonade and a pinch of flaky sea salt. Serve immediately." }
-  ],
-  bonusTip: "Any leftover pipérade base from the bottom of the pan makes an outstanding pasta sauce or bruschetta topping the next day.",
-  tags: ["french", "vegetarian", "provençal", "slow-roasted", "elegant", "pixar", "classic"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 14,
-  title: "Lembas Bread",
-  film: "The Lord of the Rings: The Fellowship of the Ring",
-  studio: "New Line Cinema",
-  year: 2001,
-  category: "fantasy-epic",
-  type: "live-action",
-  difficulty: "easy",
-  emoji: "🍞",
-  image: "https://placehold.co/600x400/1a1208/c9943a?text=The+Lord+of+the+Rings",
-  filmConnection: "Lembas bread is the waybread of the Elves, gifted to the Fellowship by Lady Galadriel in Lothlórien as they set out on their perilous journey. Rooted in Tolkien's deep mythological world-building, lembas draws inspiration from medieval European hardtack and Irish traveller's bread, designed to sustain a grown man on a single bite. The moment Galadriel presents it marks the Fellowship's transition from safety into the unknown, making it one of the most quietly emotional food moments in fantasy cinema.",
-  servings: 12,
-  prepTime: "15 mins",
-  cookTime: "20 mins",
-  totalTime: "35 mins",
-  ingredients: [
-    "2 cups all-purpose flour",
-    "1 tsp baking powder",
-    "1/2 tsp salt",
-    "1/4 cup honey",
-    "1/4 cup unsalted butter, cold and cubed",
-    "1/3 cup heavy cream",
-    "1 tsp vanilla extract",
-    "1/2 tsp cinnamon",
-    "1/4 tsp nutmeg",
-    "2 tbsp powdered sugar, for dusting"
-  ],
-  steps: [
-    { step: 1, title: "Preheat & Prepare", detail: "Preheat your oven to 375°F (190°C). Line a baking sheet with parchment paper and lightly flour a clean work surface. Ensure your butter is very cold, as this gives the bread its characteristic dense yet crumbly texture." },
-    { step: 2, title: "Mix the Dry Ingredients", detail: "In a large bowl, whisk together the flour, baking powder, salt, cinnamon, and nutmeg until evenly combined. The warm spices are key to evoking the elvish, almost supernatural quality of the bread." },
-    { step: 3, title: "Cut in the Butter", detail: "Add the cold cubed butter to the flour mixture. Using your fingertips or a pastry cutter, work the butter into the flour until the mixture resembles coarse crumbs with some pea-sized pieces remaining. Do not overwork the dough." },
-    { step: 4, title: "Combine Wet Ingredients", detail: "In a small bowl, whisk together the honey, heavy cream, and vanilla extract. Pour the wet mixture into the dry ingredients and stir gently with a fork until a shaggy dough just comes together. Avoid over-mixing to keep the texture tender." },
-    { step: 5, title: "Shape the Lembas", detail: "Turn the dough out onto your floured surface and gently pat it into a rectangle about 1 inch thick. Cut into 12 equal squares using a sharp knife or bench scraper. Score a light X across the top of each square with the knife tip, in the traditional elvish style." },
-    { step: 6, title: "Bake & Finish", detail: "Arrange the squares on the prepared baking sheet, spacing them slightly apart. Bake for 18–20 minutes until the edges are just golden and the tops are set but still pale. Allow to cool completely on a wire rack, then dust lightly with powdered sugar before serving." }
-  ],
-  bonusTip: "Wrap leftover lembas squares individually in large dried leaves or parchment paper tied with twine for an authentic presentation — they keep well for up to five days and make a perfect trail snack.",
-  tags: ["bread", "elvish", "tolkien", "fantasy", "travel-food", "baking", "vegetarian"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 15,
-  title: "Juicy Cheeseburger",
-  film: "Pulp Fiction",
-  studio: "Miramax Films",
-  year: 1994,
-  category: "thriller",
-  type: "live-action",
-  difficulty: "easy",
-  emoji: "🍔",
-  image: "https://placehold.co/600x400/1a0a00/d4a017?text=Pulp+Fiction",
-  filmConnection: "In one of cinema's most iconic opening scenes, hitmen Vincent Vega and Jules Winnfield debate the merits of the 'Royale with Cheese' before Jules delivers his legendary Ezekiel 25:17 monologue. The cheeseburger Vincent samples from Brett's bag became a cultural touchstone, symbolising the film's razor-sharp blend of mundane small talk and sudden menace. Tarantino's genius was making a simple fast-food burger feel as loaded with tension as any weapon on screen.",
-  servings: 4,
-  prepTime: "15 mins",
-  cookTime: "15 mins",
-  totalTime: "30 mins",
-  ingredients: [
-    "600g (1.3 lb) 80/20 ground beef chuck",
-    "1 tsp fine sea salt",
-    "1 tsp freshly cracked black pepper",
-    "1 tsp garlic powder",
-    "1 tsp Worcestershire sauce",
-    "4 slices American cheese (or sharp cheddar)",
-    "4 brioche burger buns, lightly toasted",
-    "2 tbsp unsalted butter (for toasting buns)",
-    "4 tbsp mayonnaise",
-    "2 tbsp yellow mustard",
-    "2 tbsp ketchup",
-    "4 leaves iceberg lettuce",
-    "2 medium tomatoes, sliced thick",
-    "1 small white onion, thinly sliced",
-    "8 slices dill pickle"
-  ],
-  steps: [
-    { step: 1, title: "Season and Form the Patties", detail: "Combine ground beef, salt, pepper, garlic powder, and Worcestershire sauce in a large bowl. Mix gently with your hands — do not overwork the meat or the patties will become tough. Divide into 4 equal portions of roughly 150g each and press into patties about 1cm (½ inch) thick. Use your thumb to press a shallow dimple into the centre of each patty to prevent puffing during cooking." },
-    { step: 2, title: "Toast the Buns", detail: "Melt butter in a large cast-iron skillet or griddle over medium heat. Place the buns cut-side down and toast for 1–2 minutes until golden brown. Remove and set aside. This step adds flavour and creates a barrier so the bun does not go soggy from the burger juices." },
-    { step: 3, title: "Cook the Patties", detail: "Increase the heat to medium-high and let the skillet get very hot. Cook the patties for 3–4 minutes on the first side without pressing them down — resist the urge, as pressing squeezes out all the precious juices. Flip once, and immediately place a slice of American cheese on each patty. Cook for a further 2–3 minutes for a medium doneness. Cover loosely with a lid or foil for the last 30 seconds to help the cheese melt perfectly." },
-    { step: 4, title: "Build the Burger", detail: "Spread mayonnaise generously on the top bun and a mixture of mustard and ketchup on the bottom bun. Layer the bottom bun with pickles, sliced onion, a leaf of iceberg lettuce, and a thick slice of tomato. Place the cheesy patty on top, then crown with the top bun. Serve immediately while the cheese is still molten and the bun is warm." }
-  ],
-  bonusTip: "Leftover cooked patties can be crumbled into a pan with diced onion, egg, and hot sauce the next morning for a killer breakfast scramble.",
-  tags: ["american", "burger", "classic", "comfort-food", "iconic-scene", "tarantino"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 16,
-  title: "Turkish Delight",
-  film: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-  studio: "Walt Disney Pictures / Walden Media",
-  year: 2005,
-  category: "fantasy-epic",
-  type: "live-action",
-  difficulty: "medium",
-  emoji: "🍬",
-  image: "https://placehold.co/600x400/1a0a2e/c9d4f5?text=The+Chronicles+of+Narnia",
-  filmConnection: "The White Witch uses enchanted Turkish Delight to seduce Edmund Pevensie into betraying his siblings, offering him as much as he could want in exchange for bringing his family to her. Turkish Delight is a centuries-old confection originating in the Ottoman Empire, and its use as a symbol of temptation and corruption is central to C.S. Lewis's 1950 novel. The scene perfectly captures how something beautiful and sweet can mask something deeply sinister.",
-  servings: 36,
-  prepTime: "20 mins",
-  cookTime: "45 mins",
-  totalTime: "1 hr 5 mins (plus 4 hrs setting time)",
-  ingredients: [
-    "3 cups granulated sugar",
-    "1 cup cold water, divided",
-    "1 cup cornstarch, divided",
-    "1 tsp cream of tartar",
-    "1¼ cups water for syrup",
-    "2 tbsp rose water",
-    "1 tsp pure vanilla extract",
-    "6 drops red or pink food colouring",
-    "½ cup chopped pistachios (optional)",
-    "1 cup powdered (icing) sugar for coating",
-    "Extra cornstarch for dusting"
-  ],
-  steps: [
-    { step: 1, title: "Prepare the Cornstarch Slurry", detail: "In a medium saucepan, whisk together ½ cup cold water and ¾ cup of the cornstarch until completely smooth with no lumps. Add the cream of tartar and stir to combine. Set aside. This slurry is the base that gives Turkish Delight its signature gelatinous, chewy texture." },
-    { step: 2, title: "Make the Sugar Syrup", detail: "In a separate heavy-bottomed saucepan, combine the granulated sugar and 1¼ cups water over medium-high heat. Stir until the sugar dissolves, then stop stirring and allow the syrup to boil. Clip a candy thermometer to the side and cook until the syrup reaches 240°F (115°C), the soft-ball stage. Remove from heat immediately." },
-    { step: 3, title: "Combine and Cook the Mixture", detail: "Place the cornstarch saucepan over medium heat and cook, stirring constantly, until the slurry thickens into a pale paste, about 3–4 minutes. Slowly and carefully pour the hot sugar syrup into the cornstarch paste in a thin, steady stream, whisking vigorously the entire time to prevent lumps. Once fully combined, reduce heat to low." },
-    { step: 4, title: "Low and Slow Simmer", detail: "Continue cooking the mixture over low heat, stirring frequently with a wooden spoon or heat-safe spatula, for approximately 35–40 minutes. The mixture is ready when it turns a pale golden colour, pulls away from the sides of the pan cleanly, and holds its shape when a small drop is placed on a cold plate. Do not rush this step — patience is key to the proper chewy texture." },
-    { step: 5, title: "Flavour and Colour", detail: "Remove the pan from heat. Stir in the rose water, vanilla extract, food colouring, and chopped pistachios if using. Mix thoroughly until the colour is evenly distributed. Rose water is the traditional and most historically authentic flavouring for this confection, dating back to the Ottoman court of the 18th century." },
-    { step: 6, title: "Set the Turkish Delight", detail: "Lightly grease a 9x9 inch (23x23 cm) baking pan and dust it generously with a mixture of powdered sugar and the remaining ¼ cup cornstarch. Pour the hot mixture evenly into the pan and smooth the top with a greased spatula. Dust the top surface with more powdered sugar and cornstarch mixture. Allow to cool at room temperature for at least 4 hours, or overnight, until fully set." },
-    { step: 7, title: "Cut and Coat", detail: "Once completely set, turn the slab out onto a clean surface dusted with the powdered sugar and cornstarch mixture. Using a lightly greased sharp knife, cut into approximately 1-inch squares. Toss each piece generously in the remaining powdered sugar and cornstarch coating to prevent sticking. Serve in a single layer — Edmund would not share, and neither should you." }
-  ],
-  bonusTip: "Store leftover Turkish Delight in an airtight container layered with parchment paper and extra powdered sugar coating; it keeps well at room temperature for up to two weeks and the flavour deepens beautifully after the first day.",
-  tags: ["british", "ottoman", "confection", "rose water", "chewy", "candy", "fantasy", "no-gelatin", "historically-accurate"],
-  likes: 0,
-  comments: []
-}
-
-,{
-  id: 17,
-  title: "Juicy Cheeseburger",
-  film: "Pulp Fiction",
-  studio: "Miramax Films",
-  year: 1994,
-  category: "thriller",
-  type: "live-action",
-  difficulty: "easy",
-  emoji: "🍔",
-  image: "https://placehold.co/600x400/1a0a08/c93a3a?text=Pulp+Fiction",
-  filmConnection: "In one of cinema's most iconic opening scenes, hitmen Vincent Vega and Jules Winnfield debate the finer points of a 'Royale with Cheese' — McDonald's Quarter Pounder as it's known in France due to the metric system. The exchange is a masterclass in Tarantino's dialogue-driven tension, using something as mundane as a fast-food burger to reveal character and build dread before the violence begins. The scene cemented the humble cheeseburger as a cultural artifact of 1990s cool.",
-  servings: 4,
-  prepTime: "15 mins",
-  cookTime: "15 mins",
-  totalTime: "30 mins",
-  ingredients: [
-    "600g (1.3 lbs) ground beef (80/20 fat ratio)",
-    "4 brioche burger buns, lightly toasted",
-    "4 slices American cheese",
-    "1 tsp kosher salt",
-    "1 tsp freshly cracked black pepper",
-    "1 tsp garlic powder",
-    "2 tbsp unsalted butter",
-    "1 tbsp vegetable oil",
-    "4 tbsp yellow mustard",
-    "4 tbsp tomato ketchup",
-    "1 white onion, thinly sliced",
-    "4 leaves iceberg lettuce",
-    "2 ripe tomatoes, sliced",
-    "8 dill pickle slices"
-  ],
-  steps: [
-    { step: 1, title: "Form the Patties", detail: "Divide the ground beef into four equal 150g portions. Handle the meat as little as possible — overworking it makes tough patties. Gently shape each portion into a round patty about 1cm (½ inch) thick, pressing a shallow thumbprint into the centre of each one to prevent it from puffing up during cooking. Season generously on both sides with kosher salt, cracked black pepper, and garlic powder." },
-    { step: 2, title: "Sear the Patties", detail: "Heat a cast-iron skillet or heavy frying pan over high heat until it begins to smoke slightly. Add the vegetable oil and swirl to coat. Place the patties into the pan and press down firmly with a spatula. Cook for 3–4 minutes without moving them, allowing a deep brown crust to form. Flip once, then immediately lay a slice of American cheese on each patty. Cook for a further 2–3 minutes for medium doneness. Remove from heat and rest for 2 minutes." },
-    { step: 3, title: "Toast the Buns", detail: "While the patties rest, melt the butter in the same pan over medium heat. Place the brioche buns cut-side down into the butter and toast for 1–2 minutes until golden and fragrant. This adds richness and prevents the bun from going soggy once the sauces are applied." },
-    { step: 4, title: "Build the Burger", detail: "Spread yellow mustard on the bottom bun and ketchup on the top bun. Layer the bottom bun with iceberg lettuce, two tomato slices, and two dill pickle slices. Place the cheesy patty on top, then finish with a handful of raw sliced onion for sharpness and crunch. Cap it with the top bun, pressing down gently. Serve immediately with fries and a cold soda — or, if you're feeling continental, call it a Royale with Cheese." }
-  ],
-  bonusTip: "Leftover cooked patties can be crumbled into a pan with eggs and cheddar the next morning for a seriously good breakfast scramble.",
-  tags: ["burger", "american", "beef", "classic", "tarantino", "comfort-food", "quick"],
-  likes: 0,
-  comments: []
-}
 
 ];
 
