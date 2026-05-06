@@ -670,6 +670,60 @@ const RECIPES = [
   comments: []
 }
 
+,{
+  id: 22,
+  title: "Osso Buco alla Milanese",
+  film: "The Godfather",
+  studio: "Paramount Pictures",
+  year: 1972,
+  category: "drama",
+  type: "live-action",
+  difficulty: "hard",
+  emoji: "🍖",
+  image: "https://placehold.co/600x400/1a0a08/c93a3a?text=The+Godfather",
+  filmConnection: "In The Godfather, Clemenza famously instructs Michael Corleone to 'leave the gun, take the cannoli,' but it is the kitchen scenes that reveal how deeply food is woven into Corleone family life as a symbol of loyalty, warmth, and Sicilian-Italian tradition. Braised veal shanks like Osso Buco represent the northern Italian Sunday table — slow-cooked, generous, and deeply communal — mirroring the family's dual nature of domesticity and power. Food in this film is never incidental; it signals trust, belonging, and the culture the Corleones fiercely protect.",
+  servings: 4,
+  prepTime: "25 mins",
+  cookTime: "2 hrs 15 mins",
+  totalTime: "2 hrs 40 mins",
+  ingredients: [
+    "4 thick-cut veal shanks (osso buco cut, about 1.5 inches thick)",
+    "1 cup all-purpose flour, for dredging",
+    "Salt and freshly ground black pepper, to taste",
+    "4 tbsp unsalted butter",
+    "3 tbsp extra virgin olive oil",
+    "1 medium yellow onion, finely diced",
+    "2 medium carrots, finely diced",
+    "2 celery stalks, finely diced",
+    "5 garlic cloves, minced",
+    "2 tbsp tomato paste",
+    "1 cup dry white wine (such as Pinot Grigio)",
+    "1.5 cups chicken or veal stock, warm",
+    "1 cup canned whole San Marzano tomatoes, crushed by hand",
+    "2 sprigs fresh thyme",
+    "2 sprigs fresh rosemary",
+    "2 bay leaves",
+    "Zest of 1 lemon (for gremolata)",
+    "Zest of 1 orange (for gremolata)",
+    "3 tbsp fresh flat-leaf parsley, finely chopped (for gremolata)",
+    "1 small garlic clove, minced (for gremolata)",
+    "Saffron risotto alla Milanese, to serve"
+  ],
+  steps: [
+    { step: 1, title: "Prepare the Veal Shanks", detail: "Pat the veal shanks completely dry with paper towels — this is essential for a good sear. Using kitchen twine, tie a piece around the circumference of each shank to hold the meat to the bone during the long braise. Season generously on all sides with salt and freshly ground black pepper, then dredge lightly in flour, shaking off any excess." },
+    { step: 2, title: "Sear the Shanks", detail: "In a large Dutch oven or heavy-bottomed braising pot, heat 2 tbsp of olive oil and 2 tbsp of butter over medium-high heat until the butter foams and begins to subside. Working in batches to avoid crowding, sear each veal shank for 3–4 minutes per side until deeply golden brown. Transfer to a plate and set aside. Do not rush this step — the crust is the foundation of the braise's flavor." },
+    { step: 3, title: "Build the Soffritto", detail: "Reduce the heat to medium and add the remaining olive oil and butter to the same pot. Add the diced onion, carrot, and celery — the classic Italian soffritto — and cook gently for 8–10 minutes, stirring frequently, until completely softened and beginning to turn golden. Add the minced garlic and cook for another 2 minutes until fragrant. Stir in the tomato paste and cook for 2 minutes more, allowing it to caramelize slightly against the bottom of the pot." },
+    { step: 4, title: "Deglaze and Build the Braise", detail: "Pour in the dry white wine and scrape up all the browned bits from the bottom of the pot with a wooden spoon — these are pure flavor. Allow the wine to reduce by half, about 4–5 minutes. Add the warm stock and the crushed San Marzano tomatoes, stirring to combine. Nestle the seared veal shanks back into the pot in a single layer, standing upright so the marrow stays in the bone. Tuck in the thyme, rosemary, and bay leaves around the meat. The liquid should come about two-thirds of the way up the shanks." },
+    { step: 5, title: "Braise Low and Slow", detail: "Cover the pot with a tight-fitting lid and transfer to an oven preheated to 325°F (163°C). Braise for 1 hour 45 minutes to 2 hours, turning the shanks gently halfway through, until the meat is completely tender and pulling away from the bone. The marrow should be soft and yielding. If the sauce looks thin after removing the lid, place the pot on the stovetop and reduce over medium heat for 5–10 minutes until it thickens to a rich, glossy consistency." },
+    { step: 6, title: "Make the Gremolata", detail: "While the shanks finish braising, combine the lemon zest, orange zest, finely chopped flat-leaf parsley, and the small minced garlic clove in a small bowl. Mix well and set aside. This bright, aromatic condiment is the traditional and non-negotiable Milanese finishing touch — it cuts through the richness of the braise and lifts the entire dish. Do not add it until the moment of serving." },
+    { step: 7, title: "Plate and Serve", detail: "Remove the kitchen twine from each veal shank. Place each shank atop a generous spoonful of saffron risotto alla Milanese in a wide, shallow bowl. Ladle the braising sauce and vegetables over and around the meat. Finish with a pinch of gremolata scattered directly over the top. Serve immediately, encouraging diners to scoop out the marrow from the bone with a small spoon — it is considered the finest part of the dish." }
+  ],
+  bonusTip: "Any leftover braising liquid is a deeply flavored sauce — refrigerate it overnight, skim the fat, and reheat it to toss with fresh pappardelle for a restaurant-quality second meal.",
+  tags: ["italian", "braised", "veal", "slow-cook", "winter", "sunday-dinner", "milanese", "classic"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation
