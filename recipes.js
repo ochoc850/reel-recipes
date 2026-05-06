@@ -626,6 +626,50 @@ const RECIPES = [
     ]
   }
 
+,{
+  id: 21,
+  title: "Juicy Cheeseburger",
+  film: "Pulp Fiction",
+  studio: "Miramax Films",
+  year: 1994,
+  category: "thriller",
+  type: "live-action",
+  difficulty: "easy",
+  emoji: "🍔",
+  image: "https://placehold.co/600x400/1a0a08/c93a3a?text=Pulp+Fiction",
+  filmConnection: "In one of cinema's most iconic cold opens, hitmen Vincent Vega and Jules Winnfield debate the finer points of European fast food culture before a job, with Jules famously stealing a bite of Brett's 'Tasty Burger.' The scene — built entirely around a hamburger — became a masterclass in Tarantino's ability to build unbearable tension through mundane conversation. The burger itself is never fully seen, yet it remains one of the most talked-about props in film history.",
+  servings: 4,
+  prepTime: "15 mins",
+  cookTime: "15 mins",
+  totalTime: "30 mins",
+  ingredients: [
+    "1½ lbs (680g) ground beef, 80/20 blend",
+    "1 tsp kosher salt",
+    "1 tsp freshly ground black pepper",
+    "1 tsp garlic powder",
+    "1 tsp Worcestershire sauce",
+    "4 slices sharp American or cheddar cheese",
+    "4 brioche burger buns, toasted",
+    "4 leaves crisp iceberg lettuce",
+    "4 thick slices ripe tomato",
+    "4 tbsp mayonnaise",
+    "2 tbsp yellow mustard",
+    "8 dill pickle chips",
+    "½ white onion, thinly sliced",
+    "1 tbsp unsalted butter, for toasting buns"
+  ],
+  steps: [
+    { step: 1, title: "Season the Patties", detail: "Divide the ground beef into 4 equal portions of about 6oz each. Handle the meat as little as possible — overworking it makes for a tough burger. Gently form each portion into a loose ball, then press flat into a patty roughly ¾-inch thick. Use your thumb to press a shallow dimple into the centre of each patty to prevent it from doming during cooking. Season generously on both sides with salt, pepper, and garlic powder. Drizzle a few drops of Worcestershire sauce over each patty and press lightly so it adheres." },
+    { step: 2, title: "Toast the Buns", detail: "Melt the butter in a large cast-iron skillet or griddle over medium heat. Place the buns cut-side down and toast for 1–2 minutes until golden brown and slightly crisp at the edges. Remove and set aside. A properly toasted bun is the unsung hero of a great burger — it creates a barrier that stops the bun from going soggy under the juices." },
+    { step: 3, title: "Cook the Patties", detail: "Increase the heat to medium-high and allow the skillet to get properly hot — a drop of water should evaporate immediately on contact. Place the patties in the skillet and do not press them down. Cook for 3–4 minutes on the first side until a deep brown crust forms and the edges begin to grey about halfway up. Flip once, then immediately lay a slice of cheese over each patty. Cook for a further 2–3 minutes for medium doneness. For a classic diner-style melt, place a small lid or dome over the patties for the last 60 seconds to trap steam and melt the cheese perfectly." },
+    { step: 4, title: "Build Your Tasty Burger", detail: "Spread mayonnaise on both the top and bottom bun. Add a thin stripe of yellow mustard to the bottom bun. Layer the bottom bun with lettuce, then the tomato slice, then the sliced raw onion, followed by the hot cheesy patty. Crown with two dill pickle chips and the top bun. Serve immediately — ideally from a paper bag for full authenticity." }
+  ],
+  bonusTip: "Leftover cooked patties can be crumbled into a pan with diced onions and scrambled eggs the next morning for a hearty breakfast hash.",
+  tags: ["american", "burger", "comfort food", "classic", "quick", "tarantino"],
+  likes: 0,
+  comments: []
+}
+
 ];
 
 // Daily recipe rotation
