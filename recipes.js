@@ -23,6 +23,15 @@ const RECIPES = [
     prepTime: "10 mins",
     cookTime: "30 mins",
     totalTime: "40 mins",
+    groceryCosts: [
+      { item: "Japanese short-grain rice (2 lb bag)", cost: 3.99 },
+      { item: "Nori sheets (pack of 10)", cost: 2.49 },
+      { item: "Canned tuna", cost: 1.29 },
+      { item: "Japanese mayonnaise (Kewpie)", cost: 3.49 },
+      { item: "Soy sauce", cost: 1.99 },
+      { item: "Mirin", cost: 2.99 },
+      { item: "Sesame seeds", cost: 1.49 }
+    ],
     ingredients: [
       "3 cups Japanese short-grain rice",
       "3¼ cups water",
@@ -70,6 +79,15 @@ const RECIPES = [
     prepTime: "5 mins",
     cookTime: "15 mins",
     totalTime: "20 mins",
+    groceryCosts: [
+      { item: "Eggs (dozen)", cost: 3.99 },
+      { item: "Thick-cut bacon (1 lb)", cost: 6.49 },
+      { item: "Pork sausages (4-pack)", cost: 4.99 },
+      { item: "Sourdough bread (loaf)", cost: 3.49 },
+      { item: "Butter (1 stick)", cost: 1.49 },
+      { item: "Tomato", cost: 0.79 },
+      { item: "Baked beans (can)", cost: 1.29 }
+    ],
     ingredients: [
       "4 large eggs",
       "6 strips thick-cut bacon",
@@ -116,6 +134,18 @@ const RECIPES = [
     prepTime: "30 mins",
     cookTime: "2 hrs",
     totalTime: "2 hrs 30 mins",
+    groceryCosts: [
+      { item: "Zucchini (2)", cost: 1.49 },
+      { item: "Yellow squash (2)", cost: 1.49 },
+      { item: "Roma tomatoes (8)", cost: 2.99 },
+      { item: "Eggplant (1 large)", cost: 1.79 },
+      { item: "Bell peppers (3)", cost: 2.99 },
+      { item: "Onion", cost: 0.69 },
+      { item: "Garlic bulb", cost: 0.79 },
+      { item: "Fresh thyme & rosemary (pack)", cost: 1.99 },
+      { item: "Olive oil", cost: 3.99 },
+      { item: "Balsamic vinegar", cost: 2.49 }
+    ],
     ingredients: [
       "2 medium zucchini, very thinly sliced",
       "2 medium yellow squash, very thinly sliced",
@@ -166,6 +196,16 @@ const RECIPES = [
     prepTime: "20 mins",
     cookTime: "20 mins",
     totalTime: "40 mins (plus 1 hr rest)",
+    groceryCosts: [
+      { item: "Active dry yeast (packet)", cost: 0.99 },
+      { item: "All-purpose flour (5 lb bag)", cost: 3.49 },
+      { item: "Evaporated milk (can)", cost: 1.49 },
+      { item: "Vegetable shortening", cost: 2.99 },
+      { item: "Vegetable oil (for frying)", cost: 3.49 },
+      { item: "Powdered sugar (2 lb bag)", cost: 2.49 },
+      { item: "Honey", cost: 3.99 },
+      { item: "Eggs (dozen)", cost: 3.99 }
+    ],
     ingredients: [
       "2¼ tsp active dry yeast",
       "¾ cup warm water (110°F)",
@@ -215,6 +255,19 @@ const RECIPES = [
     prepTime: "20 mins",
     cookTime: "75 mins",
     totalTime: "1 hr 35 mins",
+    groceryCosts: [
+      { item: "Andouille sausage (12 oz)", cost: 5.99 },
+      { item: "Shrimp, medium (1 lb)", cost: 8.99 },
+      { item: "Chicken stock (32 oz carton)", cost: 2.99 },
+      { item: "Onion", cost: 0.69 },
+      { item: "Celery (bunch)", cost: 1.99 },
+      { item: "Green bell pepper", cost: 0.99 },
+      { item: "Garlic bulb", cost: 0.79 },
+      { item: "Cajun seasoning", cost: 2.49 },
+      { item: "Filé powder", cost: 3.49 },
+      { item: "All-purpose flour", cost: 1.00 },
+      { item: "White rice (2 lb bag)", cost: 2.49 }
+    ],
     ingredients: [
       "½ cup vegetable oil",
       "½ cup all-purpose flour",
@@ -267,6 +320,17 @@ const RECIPES = [
     prepTime: "30 mins",
     cookTime: "20 mins",
     totalTime: "50 mins (plus 1.5 hrs proofing)",
+    groceryCosts: [
+      { item: "All-purpose flour (5 lb bag)", cost: 3.49 },
+      { item: "Instant yeast (packet)", cost: 0.99 },
+      { item: "Whole milk", cost: 1.29 },
+      { item: "Ground pork (1 lb)", cost: 4.99 },
+      { item: "Soy sauce", cost: 1.99 },
+      { item: "Oyster sauce", cost: 2.49 },
+      { item: "Sesame oil", cost: 2.99 },
+      { item: "Fresh ginger", cost: 0.79 },
+      { item: "Scallions (bunch)", cost: 0.99 }
+    ],
     ingredients: [
       "FOR THE DOUGH:",
       "3 cups all-purpose flour",
@@ -320,6 +384,16 @@ const RECIPES = [
     prepTime: "20 mins",
     cookTime: "3 hrs",
     totalTime: "3 hrs 20 mins",
+    groceryCosts: [
+      { item: "Italian pork sausages (1 lb)", cost: 5.99 },
+      { item: "Beef short rib (1 lb)", cost: 8.99 },
+      { item: "San Marzano crushed tomatoes (2 cans)", cost: 5.98 },
+      { item: "Tomato paste (6 oz can)", cost: 1.29 },
+      { item: "Dry red wine (bottle)", cost: 7.99 },
+      { item: "Garlic bulb", cost: 0.79 },
+      { item: "Rigatoni or spaghetti (1 lb)", cost: 1.99 },
+      { item: "Parmesan (wedge)", cost: 4.99 }
+    ],
     ingredients: [
       "¼ cup olive oil",
       "6 garlic cloves, sliced thin",
@@ -370,6 +444,18 @@ const RECIPES = [
     prepTime: "45 mins",
     cookTime: "3 hrs",
     totalTime: "3 hrs 45 mins",
+    groceryCosts: [
+      { item: "Beef chuck (3 lbs)", cost: 17.99 },
+      { item: "Thick-cut bacon (6 oz)", cost: 4.49 },
+      { item: "Burgundy wine (bottle)", cost: 9.99 },
+      { item: "Beef stock (32 oz carton)", cost: 2.99 },
+      { item: "Pearl onions (1 lb bag)", cost: 3.49 },
+      { item: "Button mushrooms (1 lb)", cost: 2.99 },
+      { item: "Carrots (bunch)", cost: 1.49 },
+      { item: "Tomato paste (small can)", cost: 1.29 },
+      { item: "Butter (1 stick)", cost: 1.49 },
+      { item: "Fresh herbs (thyme, bay, parsley)", cost: 2.49 }
+    ],
     ingredients: [
       "3 lbs beef chuck, cut into 2-inch cubes",
       "6 oz thick-cut bacon, cut into lardons",
@@ -425,6 +511,16 @@ const RECIPES = [
     prepTime: "15 mins",
     cookTime: "20 mins",
     totalTime: "35 mins",
+    groceryCosts: [
+      { item: "All-purpose flour (5 lb bag)", cost: 3.49 },
+      { item: "Butter (1 stick)", cost: 1.49 },
+      { item: "Heavy cream (half pint)", cost: 2.49 },
+      { item: "Brown sugar", cost: 1.99 },
+      { item: "Honey", cost: 3.99 },
+      { item: "Baking powder", cost: 1.49 },
+      { item: "Vanilla extract", cost: 2.99 },
+      { item: "Cinnamon & nutmeg (spices)", cost: 2.49 }
+    ],
     ingredients: [
       "2 cups all-purpose flour",
       "1 tbsp baking powder",
@@ -473,6 +569,16 @@ const RECIPES = [
     prepTime: "20 mins",
     cookTime: "45 mins",
     totalTime: "1 hr 5 mins (plus 4 hrs setting)",
+    groceryCosts: [
+      { item: "Granulated sugar (4 lb bag)", cost: 3.49 },
+      { item: "Cornstarch (1 lb box)", cost: 1.99 },
+      { item: "Rose water (small bottle)", cost: 3.99 },
+      { item: "Powdered sugar (2 lb bag)", cost: 2.49 },
+      { item: "Pink food colouring", cost: 1.99 },
+      { item: "Pistachios (4 oz bag)", cost: 4.99 },
+      { item: "Cream of tartar", cost: 1.49 },
+      { item: "Vanilla extract", cost: 2.99 }
+    ],
     ingredients: [
       "3 cups granulated sugar",
       "1 cup cold water, divided",
@@ -520,6 +626,17 @@ const RECIPES = [
     prepTime: "20 mins",
     cookTime: "20 mins",
     totalTime: "40 mins",
+    groceryCosts: [
+      { item: "Chicken or beef liver (12 oz)", cost: 3.99 },
+      { item: "Fava beans, fresh or frozen (1 lb)", cost: 3.49 },
+      { item: "Onion", cost: 0.69 },
+      { item: "Garlic bulb", cost: 0.79 },
+      { item: "Chianti wine (bottle)", cost: 8.99 },
+      { item: "Fresh sage (pack)", cost: 1.99 },
+      { item: "Fresh rosemary (pack)", cost: 1.99 },
+      { item: "Lemon", cost: 0.59 },
+      { item: "Butter (1 stick)", cost: 1.49 }
+    ],
     ingredients: [
       "12 oz chicken or beef liver, cleaned and sliced",
       "1 cup fresh or frozen fava beans",
@@ -568,6 +685,17 @@ const RECIPES = [
     prepTime: "15 mins",
     cookTime: "15 mins",
     totalTime: "30 mins",
+    groceryCosts: [
+      { item: "Ground beef chuck 80/20 (1.5 lbs)", cost: 7.99 },
+      { item: "Brioche burger buns (4-pack)", cost: 3.49 },
+      { item: "American cheese slices (pack)", cost: 2.99 },
+      { item: "Butter (1 stick)", cost: 1.49 },
+      { item: "Iceberg lettuce (head)", cost: 1.49 },
+      { item: "Tomatoes (2)", cost: 1.49 },
+      { item: "White onion", cost: 0.69 },
+      { item: "Dill pickles (jar)", cost: 2.99 },
+      { item: "Condiments (mayo, mustard, ketchup)", cost: 3.99 }
+    ],
     ingredients: [
       "600g (1.3 lb) 80/20 ground beef chuck",
       "1 tsp fine sea salt",
@@ -619,6 +747,13 @@ const RECIPES = [
     prepTime: "20 mins",
     cookTime: "45 mins",
     totalTime: "65 mins",
+    groceryCosts: [
+      { item: "Navel oranges (3)", cost: 2.49 },
+      { item: "Lemon", cost: 0.59 },
+      { item: "Granulated sugar (4 lb bag)", cost: 3.49 },
+      { item: "Thick white bread (loaf)", cost: 3.49 },
+      { item: "Unsalted butter (1 stick)", cost: 1.49 }
+    ],
     ingredients: [
       "FOR THE MARMALADE:",
       "3 large navel oranges",
