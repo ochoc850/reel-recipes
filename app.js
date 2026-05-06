@@ -97,6 +97,30 @@ function buildDietaryBadges(dietary) {
   }).join('');
 }
 
+function buildGroceryCosts(groceryCosts) {
+  if (!groceryCosts || groceryCosts.length === 0) return '';
+  const total = groceryCosts.reduce((sum, g) => sum + g.cost, 0);
+  const rows = groceryCosts.map(g => `
+    <div class="cost-row">
+      <span class="cost-item">${g.item}</span>
+      <span class="cost-price">$${g.cost.toFixed(2)}</span>
+    </div>
+  `).join('');
+  return `
+    <section class="grocery-costs">
+      <h2>🛒 Estimated Grocery Costs</h2>
+      <p class="cost-note">Average US supermarket prices. Prices vary by location and season. Many pantry staples you may already own.</p>
+      <div class="cost-list">
+        ${rows}
+      </div>
+      <div class="cost-total">
+        <span>Estimated Total</span>
+        <span class="cost-total-price">$${total.toFixed(2)}</span>
+      </div>
+    </section>
+  `;
+}
+
 function renderGrid(filter) {
   const grid = document.getElementById('recipeGrid');
   const filtered = filterRecipes(filter);
@@ -116,6 +140,11 @@ function renderGrid(filter) {
     const totalComments = recipe.comments.length + userComments.length;
     const totalLikes = recipe.likes + (isLiked ? 1 : 0);
     const dietaryHTML = buildDietaryBadges(recipe.dietary);
+
+    // Calculate total cost for card badge
+    const totalCost = recipe.groceryCosts
+      ? recipe.groceryCosts.reduce((sum, g) => sum + g.cost, 0)
+      : null;
 
     const card = document.createElement('div');
     card.className = `recipe-card ${isToday ? 'featured' : ''}`;
@@ -138,7 +167,7 @@ function renderGrid(filter) {
         <div class="card-meta">
           <span>⏱ ${recipe.totalTime}</span>
           <span>👥 Serves ${recipe.servings}</span>
-          <span>🎬 ${recipe.studio}</span>
+          ${totalCost ? `<span>🛒 ~$${totalCost.toFixed(2)}</span>` : ''}
         </div>
         <div class="card-actions">
           <button class="like-btn ${isLiked ? 'liked' : ''}" data-id="${recipe.id}">
@@ -200,6 +229,7 @@ function openModal(id, scrollToComments = false) {
   const userComments = comments[recipe.id] || [];
   const allComments = [...recipe.comments, ...userComments];
   const dietaryHTML = buildDietaryBadges(recipe.dietary);
+  const groceryHTML = buildGroceryCosts(recipe.groceryCosts);
 
   document.getElementById('modalBody').innerHTML = `
     <div class="modal-image-pair">
@@ -264,6 +294,8 @@ function openModal(id, scrollToComments = false) {
           `).join('')}
         </section>
       </div>
+
+      ${groceryHTML}
 
       <section class="bonus-tip">
         <h2>💡 Bonus: Waste Nothing</h2>
