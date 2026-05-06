@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reel Recipes – Cook the Movies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">
@@ -47,13 +45,22 @@
           <a href="#" data-filter="hard">🔴 Hard</a>
         </div>
       </div>
+      <div class="nav-group dropdown">
+        <button class="nav-btn">🥦 Dietary ▾</button>
+        <div class="dropdown-menu">
+          <a href="#" data-filter="vegan">🌱 Vegan</a>
+          <a href="#" data-filter="vegetarian">🥦 Vegetarian</a>
+          <a href="#" data-filter="gluten-free">🌾 Gluten-Free</a>
+          <a href="#" data-filter="dairy-free">🥛 Dairy-Free</a>
+          <a href="#" data-filter="nut-free">🥜 Nut-Free</a>
+        </div>
+      </div>
       <button class="nav-btn active" data-filter="all">All Recipes</button>
     </nav>
     <button class="hamburger" id="hamburger">☰</button>
   </div>
 </header>
 
-<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <button class="close-mobile" id="closeNav">✕</button>
   <h3>Browse Recipes</h3>
@@ -61,18 +68,25 @@
   <a href="#" data-filter="studio-ghibli" class="mob-link">Studio Ghibli</a>
   <a href="#" data-filter="disney-pixar" class="mob-link">Disney / Pixar</a>
   <a href="#" data-filter="dreamworks" class="mob-link">DreamWorks</a>
+  <a href="#" data-filter="other-animated" class="mob-link">Other Animation</a>
   <p><strong>🎥 Live Action</strong></p>
   <a href="#" data-filter="italian-classic" class="mob-link">Italian Classics</a>
   <a href="#" data-filter="fantasy-epic" class="mob-link">Fantasy & Epic</a>
   <a href="#" data-filter="drama" class="mob-link">Drama</a>
+  <a href="#" data-filter="thriller" class="mob-link">Thriller & Horror</a>
   <p><strong>🍽️ Difficulty</strong></p>
   <a href="#" data-filter="easy" class="mob-link">🟢 Easy</a>
   <a href="#" data-filter="medium" class="mob-link">🟡 Medium</a>
   <a href="#" data-filter="hard" class="mob-link">🔴 Hard</a>
+  <p><strong>🥦 Dietary</strong></p>
+  <a href="#" data-filter="vegan" class="mob-link">🌱 Vegan</a>
+  <a href="#" data-filter="vegetarian" class="mob-link">🥦 Vegetarian</a>
+  <a href="#" data-filter="gluten-free" class="mob-link">🌾 Gluten-Free</a>
+  <a href="#" data-filter="dairy-free" class="mob-link">🥛 Dairy-Free</a>
+  <a href="#" data-filter="nut-free" class="mob-link">🥜 Nut-Free</a>
   <a href="#" data-filter="all" class="mob-link">All Recipes</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <p class="hero-tag">Daily Film Recipes</p>
@@ -84,36 +98,29 @@
     <div class="strip-item">🍙 Spirited Away</div>
     <div class="strip-item">🍝 The Godfather</div>
     <div class="strip-item">🍅 Ratatouille</div>
-    <div class="strip-item">🍩 Princess & the Frog</div>
+    <div class="strip-item">🍩 Princess and the Frog</div>
     <div class="strip-item">🫐 Paddington</div>
-    <div class="strip-item">🍳 Julie & Julia</div>
+    <div class="strip-item">🍳 Julie and Julia</div>
   </div>
 </section>
 
-<!-- DAILY RECIPE BANNER -->
 <section class="daily-banner">
   <span class="daily-label">🌟 Today's Feature Recipe</span>
   <span class="daily-title" id="dailyTitle">Loading today's recipe...</span>
 </section>
 
-<!-- RECIPE GRID -->
 <section class="recipes-section" id="recipes">
   <div class="section-header">
     <h2>Recipe Collection</h2>
     <span class="recipe-count" id="recipeCount">Loading...</span>
   </div>
-  <div class="recipe-grid" id="recipeGrid">
-    <!-- Cards injected by JS -->
-  </div>
+  <div class="recipe-grid" id="recipeGrid"></div>
 </section>
 
-<!-- RECIPE MODAL -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal" id="recipeModal">
     <button class="modal-close" id="modalClose">✕</button>
-    <div class="modal-body" id="modalBody">
-      <!-- Content injected by JS -->
-    </div>
+    <div class="modal-body" id="modalBody"></div>
   </div>
 </div>
 
