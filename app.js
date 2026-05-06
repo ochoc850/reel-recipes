@@ -6,6 +6,18 @@ let activeFilter = 'all';
 let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes') || '[]');
 let comments = JSON.parse(localStorage.getItem('recipeComments') || '{}');
 
+const DIETARY_LABELS = {
+  'vegan':               { label: 'Vegan',             emoji: '🌱' },
+  'vegetarian':          { label: 'Vegetarian',         emoji: '🥦' },
+  'gluten-free':         { label: 'Gluten-Free',        emoji: '🌾' },
+  'gluten-free-option':  { label: 'GF Option',          emoji: '🌾' },
+  'dairy-free':          { label: 'Dairy-Free',         emoji: '🥛' },
+  'dairy-free-option':   { label: 'DF Option',          emoji: '🥛' },
+  'nut-free':            { label: 'Nut-Free',           emoji: '🥜' },
+  'contains-nuts':       { label: 'Contains Nuts',      emoji: '⚠️' },
+  'contains-shellfish':  { label: 'Contains Shellfish', emoji: '🦐' }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   renderGrid('all');
   setupDailyBanner();
@@ -62,6 +74,10 @@ function setupMobileNav() {
 
 function filterRecipes(filter) {
   if (filter === 'all') return RECIPES;
+  const dietaryFilters = ['vegan','vegetarian','gluten-free','dairy-free','nut-free'];
+  if (dietaryFilters.includes(filter)) {
+    return RECIPES.filter(r => r.dietary && r.dietary.includes(filter));
+  }
   return RECIPES.filter(r =>
     r.category === filter || r.difficulty === filter || r.type === filter
   );
@@ -72,13 +88,22 @@ function updateRecipeCount(filter) {
   document.getElementById('recipeCount').textContent = `${count} recipe${count !== 1 ? 's' : ''}`;
 }
 
+function buildDietaryBadges(dietary) {
+  if (!dietary || dietary.length === 0) return '';
+  return dietary.map(d => {
+    const info = DIETARY_LABELS[d];
+    if (!info) return '';
+    return `<span class="diet-badge ${d}">${info.emoji} ${info.label}</span>`;
+  }).join('');
+}
+
 function renderGrid(filter) {
   const grid = document.getElementById('recipeGrid');
   const filtered = filterRecipes(filter);
   grid.innerHTML = '';
 
   if (filtered.length === 0) {
-    grid.innerHTML = '<div class="no-results"><p>No recipes found for this filter yet.</p><p>Check back soon!</p></div>';
+    grid.innerHTML = '<div class="no-results"><p>No recipes found for this filter.</p><p>Check back soon!</p></div>';
     return;
   }
 
@@ -90,6 +115,7 @@ function renderGrid(filter) {
     const userComments = comments[recipe.id] || [];
     const totalComments = recipe.comments.length + userComments.length;
     const totalLikes = recipe.likes + (isLiked ? 1 : 0);
+    const dietaryHTML = buildDietaryBadges(recipe.dietary);
 
     const card = document.createElement('div');
     card.className = `recipe-card ${isToday ? 'featured' : ''}`;
@@ -108,6 +134,7 @@ function renderGrid(filter) {
         <div class="card-film">${recipe.emoji} ${recipe.film} (${recipe.year})</div>
         <h3 class="card-title">${recipe.title}</h3>
         <p class="card-snippet">${recipe.filmConnection.substring(0, 110)}...</p>
+        ${dietaryHTML ? `<div class="card-dietary">${dietaryHTML}</div>` : ''}
         <div class="card-meta">
           <span>⏱ ${recipe.totalTime}</span>
           <span>👥 Serves ${recipe.servings}</span>
@@ -172,20 +199,32 @@ function openModal(id, scrollToComments = false) {
   const isLiked = likedRecipes.includes(recipe.id);
   const userComments = comments[recipe.id] || [];
   const allComments = [...recipe.comments, ...userComments];
+  const dietaryHTML = buildDietaryBadges(recipe.dietary);
 
   document.getElementById('modalBody').innerHTML = `
-    <div class="modal-hero">
-      <img src="${recipe.foodImage}" alt="${recipe.title}"
-        onerror="this.onerror=null;this.src='https://placehold.co/860x280/2e2238/d4c5f0?text=${encodeURIComponent(recipe.title)}';"/>
-      <div class="modal-hero-overlay">
-        <div class="modal-badges">
-          <span class="badge-type ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</span>
-          <span class="badge-diff ${recipe.difficulty}">${difficultyLabel(recipe.difficulty)}</span>
-        </div>
-        <h1>${recipe.emoji} ${recipe.title}</h1>
-        <p class="modal-film">From <strong>${recipe.film}</strong> (${recipe.year}) · ${recipe.studio}</p>
+    <div class="modal-image-pair">
+      <div class="img-block">
+        <img src="${recipe.movieSceneImage}" alt="${recipe.film} movie"
+          onerror="this.onerror=null;this.src='https://placehold.co/430x280/2e2238/d4c5f0?text=In+the+Film';"/>
+        <span class="img-label">🎬 In the Film</span>
+      </div>
+      <div class="img-block">
+        <img src="${recipe.foodImage}" alt="${recipe.title}"
+          onerror="this.onerror=null;this.src='https://placehold.co/430x280/2e2238/d4c5f0?text=The+Real+Dish';"/>
+        <span class="img-label">🍽 The Real Dish</span>
       </div>
     </div>
+
+    <div class="modal-title-bar">
+      <div class="modal-badges">
+        <span class="badge-type ${recipe.type}">${recipe.type === 'animated' ? '🎨 Animated' : '🎥 Live Action'}</span>
+        <span class="badge-diff ${recipe.difficulty}">${difficultyLabel(recipe.difficulty)}</span>
+      </div>
+      <h1>${recipe.emoji} ${recipe.title}</h1>
+      <p class="modal-film">From <strong>${recipe.film}</strong> (${recipe.year}) · ${recipe.studio}</p>
+    </div>
+
+    ${dietaryHTML ? `<div class="modal-dietary"><span class="diet-label">Dietary:</span>${dietaryHTML}</div>` : ''}
 
     <div class="modal-content">
       <section class="film-connection">
@@ -215,16 +254,12 @@ function openModal(id, scrollToComments = false) {
             ).join('')}
           </ul>
         </section>
-
         <section class="steps-section">
           <h2>👨‍🍳 Method</h2>
           ${recipe.steps.map(s => `
             <div class="step-card">
               <div class="step-num">${s.step}</div>
-              <div class="step-body">
-                <h4>${s.title}</h4>
-                <p>${s.detail}</p>
-              </div>
+              <div class="step-body"><h4>${s.title}</h4><p>${s.detail}</p></div>
             </div>
           `).join('')}
         </section>
@@ -259,7 +294,7 @@ function openModal(id, scrollToComments = false) {
           <h3>Leave a Comment</h3>
           <input type="text" id="commentName" placeholder="Your name (optional)" class="comment-input" />
           <textarea id="commentText" placeholder="Share your experience, tips, or questions..." class="comment-textarea" rows="4"></textarea>
-          <p class="comment-note">📸 Made this recipe? Share your creation by pasting an image URL below.</p>
+          <p class="comment-note">📸 Made this recipe? Paste an image URL below to share your creation.</p>
           <input type="text" id="commentImage" placeholder="Image URL (optional)" class="comment-input" />
           <button class="submit-comment-btn" data-id="${recipe.id}">Post Comment</button>
         </div>
@@ -295,9 +330,7 @@ function submitComment(recipeId) {
   const name = document.getElementById('commentName').value.trim() || 'Anonymous Chef';
   const text = document.getElementById('commentText').value.trim();
   const image = document.getElementById('commentImage').value.trim();
-
   if (!text) { alert('Please write something before posting!'); return; }
-
   if (!comments[recipeId]) comments[recipeId] = [];
   comments[recipeId].push({ user: name, text, time: 'Just now', image: image || null });
   localStorage.setItem('recipeComments', JSON.stringify(comments));
